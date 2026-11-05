@@ -1,0 +1,55 @@
+Id,Label,type,lane
+donald-trump,Donald J. Trump,person,3
+jared-kushner,Jared Kushner,person,3
+ivanka-trump,Ivanka Trump,person,3
+eric-trump,Eric Trump,person,3
+donald-trump-jr,Donald Trump Jr.,person,3
+charles-kushner,Charles Kushner,person,3
+steve-witkoff,Steve Witkoff,person,3
+zach-witkoff,Zach Witkoff,person,3
+trump-organization,The Trump Organization,company,2
+world-liberty-financial,World Liberty Financial (WLF),company,2
+affinity-partners,Affinity Partners,fund,2
+kushner-companies,Kushner Companies,company,2
+kushner-foundation,Charles and Seryl Kushner Foundation,nonprofit,2
+afbey,American Friends of Beit El Yeshiva,nonprofit,5
+dar-global,Dar Global (Dar Al Arkan),company,2
+phoenix-financial,Phoenix Financial,company,5
+elbit-systems,Elbit Systems,company,5
+menora-mivtachim,Menora Mivtachim,company,5
+bank-hapoalim,Bank Hapoalim,company,5
+brookfield,Brookfield (Brookfield Property Partners),company,2
+electronic-arts,Electronic Arts (EA),company,2
+silver-lake,Silver Lake,fund,2
+binance,Binance,company,2
+liv-golf,LIV Golf,company,2
+crescent-heights,Crescent Heights,company,2
+preserve-america-pac,Preserve America PAC,pac,4
+saudi-pif,Public Investment Fund (Saudi Arabia),fund,1
+saudi-arabia,Kingdom of Saudi Arabia,government,1
+qatar,State of Qatar,government,1
+qia,Qatar Investment Authority (QIA),fund,1
+qatari-diar,Qatari Diar,company,1
+uae,United Arab Emirates,government,1
+lunate,Lunate,fund,1
+mgx,MGX,fund,1
+aryam,Aryam Investment 1,fund,1
+tahnoon,Sheikh Tahnoon bin Zayed Al Nahyan,person,1
+miriam-adelson,Miriam Adelson,person,1
+sheldon-adelson,Sheldon Adelson (d. 2021),person,1
+israel,State of Israel (Government),government,5
+us-state-dept,US Department of State,agency,4
+us-dod,US Department of Defense,agency,4
+senate-finance,Senate Finance Committee (Wyden),legislature,4
+house-oversight-dems,House Oversight Committee Democrats,legislature,4
+house-judiciary-dems,House Judiciary Committee Democrats (Raskin),legislature,4
+p-jerusalem,Jerusalem recognition & embassy relocation (2017–18),policy,4
+p-golan,Golan Heights recognition (2019),policy,4
+p-settlements,Settlements legal position (2019),policy,4
+p-peace-prosperity,"""Peace to Prosperity"" economic plan (2019–20)",policy,4
+p-abraham,Abraham Accords (2020),policy,4
+p-arms-2025,Emergency arms sales to Israel (Feb 2025),policy,4
+p-mou-2016,2016 US–Israel Memorandum of Understanding,policy,4
+p-gaza-takeover,"Gaza ""takeover"" proposal (Feb 2025)",policy,4
+p-gaza-plan,20-point Gaza plan & Board of Peace (2025–26),policy,4
+p-qatar-jet,Acceptance of Qatari 747-8 (2025),policy,4

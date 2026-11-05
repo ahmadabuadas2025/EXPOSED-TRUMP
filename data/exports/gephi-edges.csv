@@ -1,0 +1,97 @@
+Source,Target,Type,Label,kind,evidence
+donald-trump,jared-kushner,Directed,son-in-law,family,C-020
+donald-trump,ivanka-trump,Directed,daughter,family,C-034
+donald-trump,eric-trump,Directed,son,family,C-048
+donald-trump,donald-trump-jr,Directed,son,family,C-049
+jared-kushner,ivanka-trump,Directed,spouse,family,C-034
+charles-kushner,jared-kushner,Directed,father,family,C-037
+jared-kushner,affinity-partners,Directed,founder & CEO,role,C-020; C-024
+charles-kushner,kushner-companies,Directed,founder,role,C-036
+charles-kushner,kushner-foundation,Directed,co-founder,role,C-037
+eric-trump,trump-organization,Directed,executive vice president,role,C-043
+donald-trump-jr,trump-organization,Directed,executive vice president,role,C-041
+donald-trump,trump-organization,Directed,owner (via trust while in office),ownership,C-042; C-040
+donald-trump,world-liberty-financial,Directed,family entities hold equity & tokens,ownership,C-045; C-046
+steve-witkoff,world-liberty-financial,Directed,co-founder; retained interest,role,C-049
+zach-witkoff,world-liberty-financial,Directed,co-founder,role,C-047
+steve-witkoff,zach-witkoff,Directed,father,family,C-049
+eric-trump,world-liberty-financial,Directed,co-founder; reported signatory of 49% sale,role,C-048
+donald-trump-jr,world-liberty-financial,Directed,co-founder,role,C-049
+jared-kushner,p-gaza-plan,Directed,unpaid envoy in ceasefire talks,role,C-029
+steve-witkoff,p-gaza-plan,Directed,Special Envoy to the Middle East,role,C-049
+tahnoon,mgx,Directed,chairman,role,C-047
+tahnoon,aryam,Directed,reported backer,reported,C-048
+saudi-pif,liv-golf,Directed,backer,ownership,C-051
+qia,brookfield,Directed,investor in Brookfield Property Partners,ownership,C-036
+qatar,qia,Directed,sovereign wealth fund,ownership,C-024
+qatar,qatari-diar,Directed,state real-estate company,ownership,C-043
+saudi-arabia,saudi-pif,Directed,sovereign wealth fund,ownership,C-020
+uae,lunate,Directed,Abu Dhabi-based,reported,C-024
+jared-kushner,kushner-companies,Directed,former CEO; family interest,role,C-036; C-035
+dar-global,trump-organization,Directed,brand licence — Oman,business,C-041
+qatari-diar,dar-global,Directed,Simaisma golf & villas agreement,business,C-043
+affinity-partners,electronic-arts,Directed,consortium member in $55B take-private,business,C-030
+silver-lake,electronic-arts,Directed,consortium member,business,C-030
+affinity-partners,phoenix-financial,Directed,largest shareholder (7.4% after July 2026),ownership,C-025; C-026
+phoenix-financial,elbit-systems,Directed,portfolio holding (~$265M per CNN),reported,C-027
+liv-golf,trump-organization,Directed,tournaments at Trump courses; amount undisclosed,business,C-051
+bank-hapoalim,kushner-companies,Directed,lender (at least four loans),reported,C-035
+world-liberty-financial,binance,Directed,USD1 used to settle MGX deal,business,C-047
+crescent-heights,trump-organization,Directed,Ramat Gan partner; later sued,business,C-053
+israel,phoenix-financial,Directed,regulator approved stake increase (Jan 2025),policy,C-025
+donald-trump,p-jerusalem,Directed,signed Proclamation 9683,policy,C-001
+donald-trump,p-golan,Directed,signed Proclamation 9852,policy,C-004
+us-state-dept,p-settlements,Directed,Pompeo legal position,policy,C-006
+jared-kushner,p-peace-prosperity,Directed,presented economic plan,policy,C-007
+donald-trump,p-abraham,Directed,hosted signing,policy,C-008
+us-state-dept,p-arms-2025,Directed,emergency determination,policy,C-010
+donald-trump,p-gaza-takeover,Directed,announced proposal,policy,C-011
+donald-trump,p-gaza-plan,Directed,chairs Board of Peace,policy,C-012; C-013
+us-dod,p-qatar-jet,Directed,accepted aircraft,policy,C-044
+p-jerusalem,israel,Directed,recognition of capital,policy,C-001
+p-golan,israel,Directed,recognition of sovereignty,policy,C-004
+p-settlements,israel,Directed,settlements legal position,policy,C-006
+p-arms-2025,israel,Directed,munitions & bulldozers,policy,C-010
+p-abraham,uae,Directed,normalization with Israel,policy,C-008
+israel,donald-trump,Directed,"named ""Trump Heights"" — no money",policy,C-005
+sheldon-adelson,p-jerusalem,Directed,reported offer to fund embassy (outcome unknown),reported,C-003
+qatar,p-qatar-jet,Directed,donor of aircraft,business,C-044
+p-mou-2016,israel,Directed,pre-Trump aid framework,policy,C-009
+preserve-america-pac,donald-trump,Directed,super PAC supporting Trump,political,C-050
+senate-finance,affinity-partners,Directed,2024 investigation; fee findings,oversight,C-021; C-022
+senate-finance,jared-kushner,Directed,special counsel request (with Raskin),oversight,C-023
+senate-finance,kushner-companies,Directed,666 Fifth Avenue inquiry,oversight,C-036
+house-oversight-dems,trump-organization,Directed,"""White House for Sale"" report (2024)",oversight,C-040
+house-oversight-dems,affinity-partners,Directed,Phoenix letter (Oct 2026),oversight,C-028
+house-judiciary-dems,affinity-partners,Directed,2026 inquiry ($6.16B AUM claim),oversight,C-031
+saudi-pif,p-gaza-plan,Directed,investor in Kushner's fund & party to regional diplomacy,inference,C-060; C-029
+aryam,p-gaza-plan,Directed,WLF counterparty while Witkoff negotiates,inference,C-060
+elbit-systems,jared-kushner,Directed,indirect exposure via Phoenix; no causal link shown,inference,C-062
+saudi-pif,affinity-partners,Directed,PIF commitment to Affinity Partners,money-proposed,C-020
+saudi-pif,affinity-partners,Directed,Fees Affinity collected from foreign clients (to mid-2024),money,C-021
+saudi-pif,affinity-partners,Directed,Fees Affinity collected from the Saudi government,money,C-021
+qia,affinity-partners,Directed,QIA and Lunate additional commitment to Affinity,money-proposed,C-024
+affinity-partners,phoenix-financial,Directed,Affinity's total investment in Phoenix Financial (two tranches),money,C-025; C-026
+phoenix-financial,affinity-partners,Directed,Proceeds from sale of 2.5% of Phoenix,money,C-026
+phoenix-financial,affinity-partners,Directed,Market value of Affinity's remaining 7.4% Phoenix stake,money-proposed,C-026
+phoenix-financial,affinity-partners,Directed,Reported total gain on the Phoenix investment,money,C-026
+saudi-pif,electronic-arts,Directed,Enterprise value of the EA take-private,money-proposed,C-030
+menora-mivtachim,kushner-companies,Directed,Menora Mivtachim investment in Kushner Companies properties,money,C-035
+brookfield,kushner-companies,Directed,"Brookfield prepaid 99-year lease, 666 Fifth Avenue",money,C-036
+kushner-foundation,afbey,Directed,Kushner foundation grants to American Friends of Beit El Yeshiva,money,C-037
+saudi-arabia,trump-organization,Directed,Foreign-government payments to four Trump businesses (2017–2021),money,C-040
+saudi-arabia,trump-organization,Directed,Saudi government payments to Trump businesses (2017–2021),money,C-040
+qatar,trump-organization,Directed,Qatari government payments to Trump businesses (2017–2021),money,C-040
+dar-global,trump-organization,Directed,Licence fees from Dar Al Arkan reported for 2024,money,C-042
+dar-global,trump-organization,Directed,Oman project licence fees reported for 2022,money,C-042
+qatari-diar,trump-organization,Directed,Licence fee connected to the Doha golf club project,money,C-043
+qatar,us-dod,Directed,Boeing 747-8 donated by Qatar to the Department of Defense,money-proposed,C-044
+world-liberty-financial,donald-trump,Directed,World Liberty token-sale income disclosed for 2024,money,C-045
+world-liberty-financial,donald-trump,Directed,World Liberty-linked income disclosed for 2025,money,C-046
+mgx,binance,Directed,"MGX investment in Binance, settled in USD1",money-proposed,C-047
+aryam,world-liberty-financial,Directed,Aryam purchase of 49% of World Liberty Financial,money,C-048
+aryam,donald-trump,Directed,Reported upfront payment to Trump family-controlled entities,money,C-048
+aryam,steve-witkoff,Directed,Reported payment to Witkoff-affiliated entities,money,C-048
+miriam-adelson,preserve-america-pac,Directed,"Miriam Adelson contributions to Preserve America PAC, 2024",money,C-050
+israel,us-state-dept,Directed,February 2025 emergency arms sales to Israel,money-proposed,C-010
+us-state-dept,israel,Directed,2016 MOU military aid framework (FY2019–2028),money-proposed,C-009

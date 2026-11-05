@@ -1,0 +1,55 @@
+id,name,type,lane,country,role,summary
+donald-trump,Donald J. Trump,person,3,US,45th and 47th President of the United States; owner of the Trump Organization (held via trust during presidencies).,"Central subject. Business interests include branded real estate licensing, golf and hotel properties, and (from 2024) cryptocurrency ventures."
+jared-kushner,Jared Kushner,person,3,US,Son-in-law; Senior Adviser to the President 2017–2021; founder of Affinity Partners (2021); unpaid envoy in Gaza diplomacy (2025–).,"Led the first administration's Middle East portfolio, including the 2019 economic plan and the Abraham Accords period. After leaving office he founded Affinity Partners, a private-equity firm funded mainly by Gulf sovereign investors."
+ivanka-trump,Ivanka Trump,person,3,US,Daughter; Adviser to the President 2017–2021.,Filed public financial disclosures while serving; outside income reported jointly analysed with Jared Kushner's.
+eric-trump,Eric Trump,person,3,US,"Son; Executive Vice President, Trump Organization; World Liberty Financial co-founder.",Runs Trump Organization business including Gulf licensing deals; reported signatory of the 2025 World Liberty stake sale.
+donald-trump-jr,Donald Trump Jr.,person,3,US,"Son; Executive Vice President, Trump Organization; World Liberty Financial co-founder.",Co-runs the Trump Organization; listed among World Liberty Financial's co-founders.
+charles-kushner,Charles Kushner,person,3,US,Jared Kushner's father; founder of Kushner Companies; co-founder of the Charles and Seryl Kushner Foundation.,Family business and foundation are documented separately from Jared Kushner's own holdings.
+steve-witkoff,Steve Witkoff,person,3,US,Real-estate investor; US Special Envoy to the Middle East (2025–); World Liberty Financial co-founder with his sons.,Not a family member. Included because he is a business partner of the Trump family in World Liberty Financial while serving as a Middle East envoy.
+zach-witkoff,Zach Witkoff,person,3,US,Son of Steve Witkoff; World Liberty Financial co-founder.,Announced in May 2025 that USD1 would settle MGX's investment in Binance.
+trump-organization,The Trump Organization,company,2,US,"Trump family holding company for real estate, licensing, golf and hospitality.",Licenses the Trump name to foreign developers who own and build the projects; the licensor earns fees rather than owning the buildings.
+world-liberty-financial,World Liberty Financial (WLF),company,2,US,Cryptocurrency venture launched 2024; issuer of the WLFI token and USD1 stablecoin.,Co-founded by Trump family members and the Witkoffs. Trump-family entities (reported as DT Marks DEFI LLC) hold an equity and token interest.
+affinity-partners,Affinity Partners,fund,2,US,Private-equity firm founded by Jared Kushner in 2021 (Miami).,"Limited partners are reported to be predominantly Gulf sovereign wealth funds (Saudi PIF, Qatar's QIA, Abu Dhabi's Lunate). Investments include an Israeli insurer (Phoenix Financial) and a stake in the EA take-private consortium."
+kushner-companies,Kushner Companies,company,2,US,Kushner family real-estate company.,Jared Kushner was its CEO before 2017. Owned 666 Fifth Avenue from 2007 until the 2018 Brookfield transaction.
+kushner-foundation,Charles and Seryl Kushner Foundation,nonprofit,2,US,Kushner family charitable foundation.,Tax filings show grants to US nonprofits supporting institutions in West Bank settlements.
+afbey,American Friends of Beit El Yeshiva,nonprofit,5,US,US fundraising arm of a yeshiva in the Beit El settlement (West Bank).,"David Friedman, later US ambassador to Israel, was its president when the Kushner foundation's grants were reported."
+dar-global,Dar Global (Dar Al Arkan),company,2,SA,London-listed international arm of Saudi developer Dar Al Arkan.,"Trump Organization's main Gulf licensing partner since 2022 (Oman, Jeddah, Riyadh, Dubai, Qatar)."
+phoenix-financial,Phoenix Financial,company,5,IL,"Israeli insurance and investment group (publicly traded, Tel Aviv).",Affinity Partners became its largest shareholder in 2025. Its investment portfolio includes holdings in Israeli defense suppliers.
+elbit-systems,Elbit Systems,company,5,IL,Israel's largest weapons manufacturer.,Appears here only as a Phoenix Financial portfolio holding identified by CNN; no direct Trump-family holding is documented.
+menora-mivtachim,Menora Mivtachim,company,5,IL,"Israeli insurer (publicly traded, Tel Aviv).",Invested in Kushner Companies apartment properties in 2017.
+bank-hapoalim,Bank Hapoalim,company,5,IL,Israeli bank.,Reported lender to Kushner Companies.
+brookfield,Brookfield (Brookfield Property Partners),company,2,CA,Canadian asset manager.,Took a 99-year prepaid lease of 666 Fifth Avenue in 2018. The Qatar Investment Authority was a significant investor in Brookfield Property Partners.
+electronic-arts,Electronic Arts (EA),company,2,US,US video-game publisher.,"Agreed in September 2025 to a $55 billion take-private by PIF, Silver Lake and Affinity Partners."
+silver-lake,Silver Lake,fund,2,US,US private-equity firm.,Co-investor in the EA take-private.
+binance,Binance,company,2,Intl,Cryptocurrency exchange.,"Received MGX's $2 billion minority investment, settled in WLF's USD1 stablecoin."
+liv-golf,LIV Golf,company,2,SA,Professional golf league backed by Saudi Arabia's Public Investment Fund.,Has staged tournaments at Trump-owned golf courses since 2022.
+crescent-heights,Crescent Heights,company,2,US,US real-estate developer.,Trump's partner in a 2006 Ramat Gan (Israel) land purchase; later sued by the Trump Organization.
+preserve-america-pac,Preserve America PAC,pac,4,US,Pro-Trump super PAC.,Principal recipient of Miriam Adelson's 2024 political contributions.
+saudi-pif,Public Investment Fund (Saudi Arabia),fund,1,SA,Saudi sovereign wealth fund chaired by Crown Prince Mohammed bin Salman.,Largest investor in Affinity Partners; LIV Golf's backer; lead investor in the EA take-private.
+saudi-arabia,Kingdom of Saudi Arabia,government,1,SA,Foreign government.,Payments by the Saudi government to Trump properties during 2017–2021 are documented in Mazars records cited by House Oversight Democrats.
+qatar,State of Qatar,government,1,QA,Foreign government.,Donor of a Boeing 747-8 to the US Department of Defense (2025); owner of Qatari Diar and the QIA.
+qia,Qatar Investment Authority (QIA),fund,1,QA,Qatari sovereign wealth fund.,Affinity Partners limited partner (2024); investor in Brookfield Property Partners.
+qatari-diar,Qatari Diar,company,1,QA,Real-estate company of Qatar's sovereign wealth fund.,"Master developer of Simaisma, where a Trump-branded golf club and villas are planned with Dar Global."
+uae,United Arab Emirates,government,1,AE,Foreign government.,"Party to the Abraham Accords; home of MGX, Lunate and Aryam Investment."
+lunate,Lunate,fund,1,AE,Abu Dhabi investment manager.,Affinity Partners limited partner (2024).
+mgx,MGX,fund,1,AE,Abu Dhabi AI-focused investment firm chaired by Sheikh Tahnoon bin Zayed.,"Invested $2 billion in Binance, settled in USD1."
+aryam,Aryam Investment 1,fund,1,AE,Abu Dhabi entity reported to be backed by Sheikh Tahnoon bin Zayed.,Reported buyer of a 49% stake in World Liberty Financial (WSJ).
+tahnoon,Sheikh Tahnoon bin Zayed Al Nahyan,person,1,AE,UAE National Security Adviser; chairs MGX and G42.,Linked through MGX and Aryam to two transactions involving World Liberty Financial.
+miriam-adelson,Miriam Adelson,person,1,US/IL,Israeli-American billionaire and Republican donor.,Largest individual donor to pro-Trump super PAC spending in 2024.
+sheldon-adelson,Sheldon Adelson (d. 2021),person,1,US,Casino magnate and Republican donor.,Reported in 2018 to have offered to fund part of the Jerusalem embassy.
+israel,State of Israel (Government),government,5,IL,Foreign government.,"Counterparty to US recognition decisions, arms sales and peace initiatives; its regulator approved Affinity's Phoenix stake increase."
+us-state-dept,US Department of State,agency,4,US,Executive department.,Issued the 2019 settlements legal position and 2025 emergency arms-sale determinations.
+us-dod,US Department of Defense,agency,4,US,Executive department.,Formal recipient of Qatar's Boeing 747-8.
+senate-finance,Senate Finance Committee (Wyden),legislature,4,US,"Congressional committee; Sen. Ron Wyden chair (2021–2025), then ranking member.",Ran an investigation into Affinity Partners' foreign funding and 666 Fifth Avenue.
+house-oversight-dems,House Oversight Committee Democrats,legislature,4,US,Minority staff of the House Committee on Oversight.,Authored the January 2024 report on foreign-government payments to Trump businesses; 2026 letters on Kushner.
+house-judiciary-dems,House Judiciary Committee Democrats (Raskin),legislature,4,US,Minority of the House Judiciary Committee.,Opened a 2026 inquiry into Affinity Partners and Kushner's envoy role.
+p-jerusalem,Jerusalem recognition & embassy relocation (2017–18),policy,4,US,"Proclamation 9683 (Dec 6, 2017); interim embassy opened May 2018.",Formal US recognition of Jerusalem as Israel's capital.
+p-golan,Golan Heights recognition (2019),policy,4,US,"Proclamation 9852 (Mar 25, 2019).",US recognition of the Golan Heights as part of Israel.
+p-settlements,Settlements legal position (2019),policy,4,US,"Secretary Pompeo's statement of Nov 18, 2019.",The US stopped treating West Bank settlements as per se inconsistent with international law.
+p-peace-prosperity,"""Peace to Prosperity"" economic plan (2019–20)",policy,4,US,"$50 billion proposed investment framework presented by Kushner, June 2019.",Proposal only; funders were not identified and it was conditional on a political settlement.
+p-abraham,Abraham Accords (2020),policy,4,US,"Normalization agreements signed at the White House, Sept 15, 2020.","Israel–UAE and Israel–Bahrain normalization, with the US as witness."
+p-arms-2025,Emergency arms sales to Israel (Feb 2025),policy,4,US,Emergency determination bypassing congressional review.,Munitions and bulldozer sales totalling roughly $3 billion.
+p-mou-2016,2016 US–Israel Memorandum of Understanding,policy,4,US,"$38 billion military assistance framework, FY2019–2028 (signed under President Obama).",Context only. The baseline aid framework predates the Trump administration.
+p-gaza-takeover,"Gaza ""takeover"" proposal (Feb 2025)",policy,4,US,"Proposal announced at Feb 4, 2025 press conference.",Trump proposed US long-term ownership and redevelopment of Gaza.
+p-gaza-plan,20-point Gaza plan & Board of Peace (2025–26),policy,4,US,"White House plan of Sept 29, 2025; Board of Peace chaired by Trump.",Ceasefire and post-war governance framework; the Board oversees reconstruction funding.
+p-qatar-jet,Acceptance of Qatari 747-8 (2025),policy,4,US,"Department of Defense acceptance, May 2025; MOU July 2025.",Aircraft accepted as a gift to the US government for conversion to presidential use.

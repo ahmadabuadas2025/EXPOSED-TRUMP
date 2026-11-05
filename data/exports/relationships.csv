@@ -1,0 +1,69 @@
+id,source,target,kind,label,claims
+R-001,donald-trump,jared-kushner,family,son-in-law,C-020
+R-002,donald-trump,ivanka-trump,family,daughter,C-034
+R-003,donald-trump,eric-trump,family,son,C-048
+R-004,donald-trump,donald-trump-jr,family,son,C-049
+R-005,jared-kushner,ivanka-trump,family,spouse,C-034
+R-006,charles-kushner,jared-kushner,family,father,C-037
+R-010,jared-kushner,affinity-partners,role,founder & CEO,C-020; C-024
+R-011,charles-kushner,kushner-companies,role,founder,C-036
+R-012,charles-kushner,kushner-foundation,role,co-founder,C-037
+R-013,eric-trump,trump-organization,role,executive vice president,C-043
+R-014,donald-trump-jr,trump-organization,role,executive vice president,C-041
+R-015,donald-trump,trump-organization,ownership,owner (via trust while in office),C-042; C-040
+R-016,donald-trump,world-liberty-financial,ownership,family entities hold equity & tokens,C-045; C-046
+R-017,steve-witkoff,world-liberty-financial,role,co-founder; retained interest,C-049
+R-018,zach-witkoff,world-liberty-financial,role,co-founder,C-047
+R-019,steve-witkoff,zach-witkoff,family,father,C-049
+R-020,eric-trump,world-liberty-financial,role,co-founder; reported signatory of 49% sale,C-048
+R-021,donald-trump-jr,world-liberty-financial,role,co-founder,C-049
+R-022,jared-kushner,p-gaza-plan,role,unpaid envoy in ceasefire talks,C-029
+R-023,steve-witkoff,p-gaza-plan,role,Special Envoy to the Middle East,C-049
+R-024,tahnoon,mgx,role,chairman,C-047
+R-025,tahnoon,aryam,reported,reported backer,C-048
+R-026,saudi-pif,liv-golf,ownership,backer,C-051
+R-027,qia,brookfield,ownership,investor in Brookfield Property Partners,C-036
+R-028,qatar,qia,ownership,sovereign wealth fund,C-024
+R-029,qatar,qatari-diar,ownership,state real-estate company,C-043
+R-030,saudi-arabia,saudi-pif,ownership,sovereign wealth fund,C-020
+R-031,uae,lunate,reported,Abu Dhabi-based,C-024
+R-032,jared-kushner,kushner-companies,role,former CEO; family interest,C-036; C-035
+R-040,dar-global,trump-organization,business,brand licence — Oman,C-041
+R-041,qatari-diar,dar-global,business,Simaisma golf & villas agreement,C-043
+R-042,affinity-partners,electronic-arts,business,consortium member in $55B take-private,C-030
+R-043,silver-lake,electronic-arts,business,consortium member,C-030
+R-044,affinity-partners,phoenix-financial,ownership,largest shareholder (7.4% after July 2026),C-025; C-026
+R-045,phoenix-financial,elbit-systems,reported,portfolio holding (~$265M per CNN),C-027
+R-046,liv-golf,trump-organization,business,tournaments at Trump courses; amount undisclosed,C-051
+R-047,bank-hapoalim,kushner-companies,reported,lender (at least four loans),C-035
+R-048,world-liberty-financial,binance,business,USD1 used to settle MGX deal,C-047
+R-049,crescent-heights,trump-organization,business,Ramat Gan partner; later sued,C-053
+R-050,israel,phoenix-financial,policy,regulator approved stake increase (Jan 2025),C-025
+R-060,donald-trump,p-jerusalem,policy,signed Proclamation 9683,C-001
+R-061,donald-trump,p-golan,policy,signed Proclamation 9852,C-004
+R-062,us-state-dept,p-settlements,policy,Pompeo legal position,C-006
+R-063,jared-kushner,p-peace-prosperity,policy,presented economic plan,C-007
+R-064,donald-trump,p-abraham,policy,hosted signing,C-008
+R-065,us-state-dept,p-arms-2025,policy,emergency determination,C-010
+R-066,donald-trump,p-gaza-takeover,policy,announced proposal,C-011
+R-067,donald-trump,p-gaza-plan,policy,chairs Board of Peace,C-012; C-013
+R-068,us-dod,p-qatar-jet,policy,accepted aircraft,C-044
+R-069,p-jerusalem,israel,policy,recognition of capital,C-001
+R-070,p-golan,israel,policy,recognition of sovereignty,C-004
+R-071,p-settlements,israel,policy,settlements legal position,C-006
+R-072,p-arms-2025,israel,policy,munitions & bulldozers,C-010
+R-073,p-abraham,uae,policy,normalization with Israel,C-008
+R-074,israel,donald-trump,policy,"named ""Trump Heights"" — no money",C-005
+R-075,sheldon-adelson,p-jerusalem,reported,reported offer to fund embassy (outcome unknown),C-003
+R-076,qatar,p-qatar-jet,business,donor of aircraft,C-044
+R-077,p-mou-2016,israel,policy,pre-Trump aid framework,C-009
+R-078,preserve-america-pac,donald-trump,political,super PAC supporting Trump,C-050
+R-080,senate-finance,affinity-partners,oversight,2024 investigation; fee findings,C-021; C-022
+R-081,senate-finance,jared-kushner,oversight,special counsel request (with Raskin),C-023
+R-082,senate-finance,kushner-companies,oversight,666 Fifth Avenue inquiry,C-036
+R-083,house-oversight-dems,trump-organization,oversight,"""White House for Sale"" report (2024)",C-040
+R-084,house-oversight-dems,affinity-partners,oversight,Phoenix letter (Oct 2026),C-028
+R-085,house-judiciary-dems,affinity-partners,oversight,2026 inquiry ($6.16B AUM claim),C-031
+R-090,saudi-pif,p-gaza-plan,inference,investor in Kushner's fund & party to regional diplomacy,C-060; C-029
+R-091,aryam,p-gaza-plan,inference,WLF counterparty while Witkoff negotiates,C-060
+R-092,elbit-systems,jared-kushner,inference,indirect exposure via Phoenix; no causal link shown,C-062
