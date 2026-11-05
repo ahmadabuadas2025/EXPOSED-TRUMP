@@ -1,4 +1,5 @@
 import { useData } from "../lib/data";
+import { PageTitle } from "../components/Sticker";
 
 const FILES: [string, string][] = [
   ["bundle.json", "Everything the website shows, as one JSON document"],
@@ -18,7 +19,7 @@ export function DataPage() {
   const { bundle } = useData();
   return (
     <div className="mx-auto max-w-3xl">
-      <h1 className="font-serif text-3xl font-semibold text-ink">Take the data</h1>
+      <PageTitle sticker="data">Take the data</PageTitle>
       <p className="mt-2 text-ink2">
         The files below are the map itself, not a summary of it: the same findings, sources, amounts and links the site draws,
         each row carrying its citations. Built {bundle.generated}. Licensed CC BY 4.0. Use them with attribution, check our work,

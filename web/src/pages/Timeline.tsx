@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { PageTitle } from "../components/Sticker";
 import { Link } from "react-router-dom";
 import { ClassBadge } from "../components/Badges";
 import { Chips } from "../components/Chips";
@@ -53,7 +54,7 @@ export function Timeline() {
 
   return (
     <div>
-      <h1 className="font-serif text-3xl font-semibold text-ink">Timeline</h1>
+      <PageTitle sticker="timeline">Timeline</PageTitle>
       <p className="mt-1 max-w-3xl text-sm text-ink2">
         Decisions and money, side by side but kept apart. Events in the same row happened in the same year. That's all the layout
         says. Where evidence links a decision to a financial event, the finding itself says so.

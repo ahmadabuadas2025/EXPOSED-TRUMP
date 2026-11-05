@@ -108,7 +108,7 @@ export function Layout() {
           <nav id="mainnav" aria-label="Main" className={`${menu ? "flex" : "hidden"} w-full flex-col gap-1 lg:flex lg:w-auto lg:flex-row lg:gap-4`}>
             {NAV.map(([to, label]) => (
               <NavLink key={to} to={to}
-                className={({ isActive }) => `py-1 text-sm ${isActive ? "font-semibold text-ink underline decoration-ink decoration-2 underline-offset-8" : "text-ink2 hover:text-ink"}`}>
+                className={({ isActive }) => `py-1 text-sm ${isActive ? "font-semibold text-ink underline decoration-popPink decoration-2 underline-offset-8" : "text-ink2 hover:text-ink"}`}>
                 {label}
               </NavLink>
             ))}

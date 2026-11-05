@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { PageTitle } from "../components/Sticker";
 import { Link, useSearchParams } from "react-router-dom";
 import { AccessBadge, LinkBadge } from "../components/Badges";
 import { Chips } from "../components/Chips";
@@ -30,7 +31,7 @@ export function Sources() {
 
   return (
     <div>
-      <h1 className="font-serif text-3xl font-semibold text-ink">Sources</h1>
+      <PageTitle sticker="sources">Sources</PageTitle>
       <p className="mt-1 max-w-3xl text-sm text-ink2">
         Every document the findings rest on. <strong>Read in full</strong> means we retrieved the document and quote it.{" "}
         <strong>Located</strong> means we found it and know its content from excerpts, so treat it as a lead to check. Sources that

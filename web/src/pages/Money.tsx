@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { PageTitle } from "../components/Sticker";
 import { Link, useSearchParams } from "react-router-dom";
 import { ClaimCard } from "../components/ClaimCard";
 import { TxBox } from "../components/DetailPanel";
@@ -113,7 +114,7 @@ export function Money() {
   return (
     <div className="space-y-10">
       <header>
-        <h1 className="font-serif text-3xl font-semibold text-ink">Follow the money</h1>
+        <PageTitle sticker="money">Follow the money</PageTitle>
         <p className="mt-1 max-w-3xl text-sm text-ink2">
           Every amount in the register, typed by what it actually is. A $2 billion investment commitment isn't $2 billion of income, a
           company's valuation isn't its owner's profit, and a donation to a super PAC isn't money in a candidate's pocket. So amounts

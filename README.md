@@ -106,4 +106,6 @@ The site is fully static, so any static host works (GitHub Pages, Netlify, Cloud
 
 Code: MIT. Data (`data/`, generated exports): CC BY 4.0. Quoted source passages remain the property of their publishers and are reproduced for commentary and verification.
 
+The cartoon stickers in `web/public/stickers/` are AI-generated decoration, made with Higgsfield (GPT Image 2.6). They depict no real people and carry no evidence, so they stay out of findings, the map and individual profiles.
+
 This project is independent. It is not affiliated with any campaign or government, or with whofundedgenocide.com, whose public map informed the interface concepts (see `docs/REFERENCE_ANALYSIS.md`).

@@ -9,6 +9,7 @@ export default {
         page: v("page"), surface: v("surface"), raised: v("raised"),
         ink: v("ink"), ink2: v("ink2"), muted: v("muted"), line: v("line"),
         accent: v("accent"), accentInk: v("accent-ink"),
+        popPink: v("pop-pink"), popLime: v("pop-lime"),
       },
       fontFamily: {
         sans: ['"Public Sans Variable"', "system-ui", "-apple-system", '"Segoe UI"', "sans-serif"],

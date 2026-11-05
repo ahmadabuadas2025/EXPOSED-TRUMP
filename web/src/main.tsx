@@ -2,6 +2,7 @@ import { lazy, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
+import { NotFound } from "./components/Sticker";
 import "@fontsource-variable/public-sans/index.css";
 import "@fontsource-variable/source-serif-4/index.css";
 import "@fontsource/ibm-plex-mono/latin-400.css";
@@ -37,7 +38,7 @@ createRoot(document.getElementById("root")!).render(
             <Route path="sources" element={<Sources />} />
             <Route path="method" element={<Method />} />
             <Route path="data" element={<DataPage />} />
-            <Route path="*" element={<p className="text-ink2">Page not found.</p>} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </HashRouter>

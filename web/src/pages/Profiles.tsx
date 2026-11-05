@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { PageTitle } from "../components/Sticker";
 import { Link, useParams } from "react-router-dom";
 import { ClassBadge } from "../components/Badges";
 import { ClaimCard } from "../components/ClaimCard";
@@ -17,7 +18,7 @@ export function Profiles() {
   const list = bundle.entities.filter((e) => e.name.toLowerCase().includes(q.toLowerCase()));
   return (
     <div>
-      <h1 className="font-serif text-3xl font-semibold text-ink">Profiles</h1>
+      <PageTitle sticker="profiles">Profiles</PageTitle>
       <p className="mt-1 text-sm text-ink2">Every person, organisation and policy decision on the map.</p>
       <label htmlFor="pf-q" className="sr-only">Filter profiles</label>
       <input id="pf-q" className="input mt-4 max-w-sm" placeholder="Filter by name" value={q} onChange={(e) => setQ(e.target.value)} />

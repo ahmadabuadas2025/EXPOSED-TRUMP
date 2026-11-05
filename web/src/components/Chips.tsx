@@ -50,10 +50,10 @@ export function YearRange({
       </legend>
       <div className="flex items-center gap-2">
         <label className="sr-only" htmlFor="yr-from">From year</label>
-        <input id="yr-from" type="range" min={min} max={max} value={value[0]} className="w-full accent-[rgb(var(--accent))]"
+        <input id="yr-from" type="range" min={min} max={max} value={value[0]} className="w-full accent-[rgb(var(--pop-lime))]"
           onChange={(e) => onChange([Math.min(+e.target.value, value[1]), value[1]])} />
         <label className="sr-only" htmlFor="yr-to">To year</label>
-        <input id="yr-to" type="range" min={min} max={max} value={value[1]} className="w-full accent-[rgb(var(--accent))]"
+        <input id="yr-to" type="range" min={min} max={max} value={value[1]} className="w-full accent-[rgb(var(--pop-lime))]"
           onChange={(e) => onChange([value[0], Math.max(+e.target.value, value[0])])} />
       </div>
     </fieldset>

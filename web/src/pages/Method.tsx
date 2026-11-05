@@ -1,4 +1,5 @@
 import { ClassBadge, ConnBadge } from "../components/Badges";
+import { PageTitle } from "../components/Sticker";
 import { EdgeSwatch } from "../components/Legend";
 import { CATEGORY, CLASSIFICATION, CLASSIFICATION_ORDER, CONNECTION, CONNECTION_ORDER, EDGE, EDGE_ORDER } from "../lib/vocab";
 
@@ -21,7 +22,7 @@ export function Method() {
   return (
     <article className="mx-auto max-w-3xl space-y-10">
       <header>
-        <h1 className="font-serif text-4xl font-semibold text-ink">Methodology</h1>
+        <PageTitle sticker="method">Methodology</PageTitle>
         <p className="mt-3 text-lg text-ink2">
           This project tests a question: did Trump's position, decisions and policies on Israel and the Gulf benefit him, his family
           or their businesses? It doesn't assume the answer. Findings are allowed to support, qualify or contradict that question,

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { EmptyState, PageTitle } from "../components/Sticker";
 import { useSearchParams } from "react-router-dom";
 import { ClaimCard } from "../components/ClaimCard";
 import { Chips, YearRange } from "../components/Chips";
@@ -67,7 +68,7 @@ export function Evidence() {
 
   return (
     <div>
-      <h1 className="font-serif text-3xl font-semibold text-ink">Evidence explorer</h1>
+      <PageTitle sticker="evidence">Evidence explorer</PageTitle>
       <p className="mt-1 max-w-3xl text-sm text-ink2">
         Every finding in the register, with its sources, where in each source the support sits, its limitations, and responses from
         the people involved.
@@ -121,7 +122,12 @@ export function Evidence() {
           </div>
           <div className="space-y-3">
             {results.map((c) => <ClaimCard key={c.id} claim={c} />)}
-            {results.length === 0 && <p className="card p-6 text-ink2">No findings match these filters.</p>}
+            {results.length === 0 && (
+              <EmptyState>
+                <p className="font-medium text-ink">No findings match these filters.</p>
+                <button type="button" className="link mt-1 text-sm" onClick={reset}>Reset all filters</button>
+              </EmptyState>
+            )}
           </div>
         </section>
       </div>
