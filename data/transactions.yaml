@@ -1,0 +1,598 @@
+# Financial amounts. One row per distinct amount, typed so unlike amounts are never summed.
+#
+# category: revenue | profit | investment-capital | asset-value | net-worth-estimate |
+#   loan-principal | contract-value | government-expenditure | market-valuation |
+#   realized-gain | unrealized-appreciation | potential-benefit | sale-proceeds |
+#   political-contribution | charitable-donation | in-kind-gift | proposed-funding
+# status: paid | committed | disclosed | reported | estimated | proposed | announced
+#   (a commitment is not money received; "disclosed" = appears in an official filing as reported)
+# from/to: entity ids; `from` may be omitted only when hide_edge is true (payer not modelled).
+# hide_edge: true keeps the amount in the dashboard but draws no map edge.
+# amount_low/amount_high: in `currency` units; equal when a single figure is reported.
+# part_of: this amount is a component of another row and must not be added to it.
+# personal_benefit: whether evidence shows the amount benefited Trump or a family member personally.
+#   proven | partial | unproven | none
+# dedupe_key: one real-world transaction → one key, however many outlets report it.
+
+- id: T-001
+  title: PIF commitment to Affinity Partners
+  from: saudi-pif
+  to: affinity-partners
+  category: investment-capital
+  amount_low: 2000000000
+  amount_high: 2000000000
+  currency: USD
+  value_date: 2021
+  status: committed
+  beneficiary: affinity-partners
+  personal_benefit: unproven
+  benefit_note: Capital managed for the PIF. Kushner's personal economics come through fees and carried interest, which are not disclosed.
+  claims: [C-020]
+  dedupe_key: pif-affinity-commitment
+
+- id: T-002
+  title: Fees Affinity collected from foreign clients (to mid-2024)
+  from: saudi-pif
+  to: affinity-partners
+  category: revenue
+  amount_low: 0
+  amount_high: 157000000
+  currency: USD
+  value_date: 2024-07
+  status: reported
+  beneficiary: affinity-partners
+  personal_benefit: partial
+  benefit_note: Management fees are firm revenue. Senate Finance reports "as much as" $157M, an upper bound; the lower bound is not stated, so the range starts at zero. Payers include clients beyond the PIF.
+  claims: [C-021]
+  dedupe_key: affinity-foreign-fees-2024
+  methodology: Upper bound only, from the Senate Finance letter of 2024-09-25. The `from` edge is drawn to the PIF as the largest payer; other foreign clients are included in the amount.
+
+- id: T-003
+  title: Fees Affinity collected from the Saudi government
+  from: saudi-pif
+  to: affinity-partners
+  category: revenue
+  amount_low: 87000000
+  amount_high: 87000000
+  currency: USD
+  value_date: 2024-07
+  status: reported
+  beneficiary: affinity-partners
+  personal_benefit: partial
+  benefit_note: A component of T-002.
+  claims: [C-021]
+  part_of: T-002
+  dedupe_key: affinity-saudi-fees-2024
+
+- id: T-004
+  title: QIA and Lunate additional commitment to Affinity
+  from: qia
+  to: affinity-partners
+  category: investment-capital
+  amount_low: 1500000000
+  amount_high: 1500000000
+  currency: USD
+  value_date: 2024-12
+  status: committed
+  beneficiary: affinity-partners
+  personal_benefit: unproven
+  benefit_note: Combined commitment from QIA and Lunate; the split between them is not reported.
+  claims: [C-024]
+  dedupe_key: qia-lunate-affinity-2024
+
+- id: T-005
+  title: Affinity's total investment in Phoenix Financial (two tranches)
+  from: affinity-partners
+  to: phoenix-financial
+  category: investment-capital
+  amount_low: 940000000
+  amount_high: 940000000
+  currency: ILS
+  value_date: 2025-01
+  status: reported
+  beneficiary: affinity-partners
+  personal_benefit: unproven
+  benefit_note: The fund's money, invested on behalf of its (mainly Gulf) limited partners.
+  claims: [C-025, C-026]
+  dedupe_key: affinity-phoenix-investment
+
+- id: T-006
+  title: Proceeds from sale of 2.5% of Phoenix
+  from: phoenix-financial
+  to: affinity-partners
+  category: sale-proceeds
+  amount_low: 1050000000
+  amount_high: 1050000000
+  currency: ILS
+  value_date: 2026-07
+  status: reported
+  beneficiary: affinity-partners
+  personal_benefit: unproven
+  benefit_note: Proceeds, not profit. The gain on this tranche is proceeds minus its share of cost basis (about a quarter of NIS 940M), roughly NIS 0.8B, before fees and allocation to limited partners.
+  claims: [C-026]
+  dedupe_key: affinity-phoenix-sale-2026
+  methodology: "Paid to Affinity by the buyers (Fidelity among them), not by Phoenix. The edge is drawn to Phoenix for readability. Approximate gain on the tranche: 1.05B - (0.25 x 0.94B) ≈ NIS 0.815B, an estimate that assumes pro-rata cost basis."
+
+- id: T-007
+  title: Market value of Affinity's remaining 7.4% Phoenix stake
+  from: phoenix-financial
+  to: affinity-partners
+  category: market-valuation
+  amount_low: 3300000000
+  amount_high: 3300000000
+  currency: ILS
+  value_date: 2026-07
+  status: estimated
+  beneficiary: affinity-partners
+  personal_benefit: unproven
+  benefit_note: A point-in-time market value that moves with Phoenix's share price. Unrealized.
+  claims: [C-026]
+  dedupe_key: affinity-phoenix-remaining-value-2026
+
+- id: T-008
+  title: Reported total gain on the Phoenix investment
+  from: phoenix-financial
+  to: affinity-partners
+  category: unrealized-appreciation
+  amount_low: 3400000000
+  amount_high: 3400000000
+  currency: ILS
+  value_date: 2026-07
+  status: reported
+  beneficiary: affinity-partners
+  personal_benefit: unproven
+  benefit_note: As reported, a mix of realized gain (T-006 tranche) and unrealized appreciation (T-007). Classified as unrealized because most of it is.
+  claims: [C-026]
+  dedupe_key: affinity-phoenix-total-gain-2026
+  methodology: "Consistency check: T-006 (1.05B) + T-007 (3.3B) - T-005 (0.94B) = NIS 3.41B, matching the reported NIS 3.4B."
+
+- id: T-009
+  title: Enterprise value of the EA take-private
+  from: saudi-pif
+  to: electronic-arts
+  category: contract-value
+  amount_low: 55000000000
+  amount_high: 55000000000
+  currency: USD
+  value_date: 2025-09-29
+  status: announced
+  beneficiary: electronic-arts
+  personal_benefit: unproven
+  benefit_note: The whole consortium's price for EA. Affinity's share is undisclosed, and none of it is Kushner's income.
+  claims: [C-030]
+  dedupe_key: ea-take-private
+
+- id: T-010
+  title: Menora Mivtachim investment in Kushner Companies properties
+  from: menora-mivtachim
+  to: kushner-companies
+  category: investment-capital
+  amount_low: 30000000
+  amount_high: 30000000
+  currency: USD
+  value_date: 2017-05
+  status: reported
+  beneficiary: kushner-companies
+  personal_benefit: unproven
+  benefit_note: The NYT reported the deal did not involve Jared Kushner personally.
+  claims: [C-035]
+  dedupe_key: menora-kushner-2017
+
+- id: T-011
+  title: Brookfield prepaid 99-year lease, 666 Fifth Avenue
+  from: brookfield
+  to: kushner-companies
+  category: contract-value
+  amount_low: 1100000000
+  amount_high: 1300000000
+  currency: USD
+  value_date: 2018-08
+  status: reported
+  beneficiary: kushner-companies
+  personal_benefit: unproven
+  benefit_note: Relieved a large mortgage on a family-company asset. Jared Kushner's beneficial interest in Kushner Companies was disclosed while he served, but his share of this benefit is not quantified. The Qatar link is disputed.
+  claims: [C-036]
+  dedupe_key: brookfield-666-fifth
+
+- id: T-012
+  title: Kushner foundation grants to American Friends of Beit El Yeshiva
+  from: kushner-foundation
+  to: afbey
+  category: charitable-donation
+  amount_low: 38000
+  amount_high: 38000
+  currency: USD
+  value_date: 2011–2013
+  status: reported
+  beneficiary: afbey
+  personal_benefit: none
+  benefit_note: Money leaving the family. The recipient is a US nonprofit supporting a West Bank institution. The figure is a minimum.
+  claims: [C-037]
+  dedupe_key: kushner-fdn-beit-el
+
+- id: T-013
+  title: Foreign-government payments to four Trump businesses (2017–2021)
+  from: saudi-arabia
+  to: trump-organization
+  category: revenue
+  amount_low: 7800000
+  amount_high: 7800000
+  currency: USD
+  value_date: 2017–2021
+  status: reported
+  beneficiary: trump-organization
+  personal_benefit: partial
+  benefit_note: Revenue to businesses Trump owned. Profit unknown. A floor covering 4 of 500+ entities. The edge is drawn from Saudi Arabia but the amount covers at least 20 governments.
+  claims: [C-040]
+  dedupe_key: foreign-govt-payments-first-term
+
+- id: T-014
+  title: Saudi government payments to Trump businesses (2017–2021)
+  from: saudi-arabia
+  to: trump-organization
+  category: revenue
+  amount_low: 615422
+  amount_high: 615422
+  currency: USD
+  value_date: 2017–2021
+  status: reported
+  beneficiary: trump-organization
+  personal_benefit: partial
+  claims: [C-040]
+  part_of: T-013
+  dedupe_key: saudi-payments-first-term
+
+- id: T-015
+  title: Qatari government payments to Trump businesses (2017–2021)
+  from: qatar
+  to: trump-organization
+  category: revenue
+  amount_low: 465744
+  amount_high: 465744
+  currency: USD
+  value_date: 2017–2021
+  status: reported
+  beneficiary: trump-organization
+  personal_benefit: partial
+  claims: [C-040]
+  part_of: T-013
+  dedupe_key: qatar-payments-first-term
+
+- id: T-016
+  title: Licence fees from Dar Al Arkan reported for 2024
+  from: dar-global
+  to: trump-organization
+  category: revenue
+  amount_low: 21900000
+  amount_high: 21900000
+  currency: USD
+  value_date: 2024
+  status: disclosed
+  beneficiary: donald-trump
+  personal_benefit: proven
+  benefit_note: Licence income reported on Trump's own disclosure, as described by the press. Revenue, not profit.
+  claims: [C-042]
+  dedupe_key: dar-licence-2024
+
+- id: T-017
+  title: Oman project licence fees reported for 2022
+  from: dar-global
+  to: trump-organization
+  category: revenue
+  amount_low: 5350000
+  amount_high: 5350000
+  currency: USD
+  value_date: 2022
+  status: disclosed
+  beneficiary: donald-trump
+  personal_benefit: proven
+  benefit_note: Forbes reports $7.85M from Oman over 2021–early 2024, which overlaps this figure and is not added to it.
+  claims: [C-042]
+  dedupe_key: dar-oman-licence-2022
+
+- id: T-018
+  title: Licence fee connected to the Doha golf club project
+  from: qatari-diar
+  to: trump-organization
+  category: revenue
+  amount_low: 5250000
+  amount_high: 5250000
+  currency: USD
+  value_date: 2025
+  status: reported
+  beneficiary: donald-trump
+  personal_benefit: partial
+  benefit_note: Single-source figure (The National). Whether Dar Global or Qatari Diar paid it is not established; the edge is drawn to Qatari Diar as project owner.
+  claims: [C-043]
+  dedupe_key: doha-golf-licence
+
+- id: T-019
+  title: Boeing 747-8 donated by Qatar to the Department of Defense
+  from: qatar
+  to: us-dod
+  category: in-kind-gift
+  amount_low: 400000000
+  amount_high: 400000000
+  currency: USD
+  value_date: 2025-05
+  status: estimated
+  beneficiary: us-dod
+  personal_benefit: unproven
+  benefit_note: A gift to the US government. Reported terms allowing post-presidency use would be a personal benefit, but that is not established by documents reviewed here.
+  claims: [C-044]
+  dedupe_key: qatar-747
+
+- id: T-020
+  title: World Liberty token-sale income disclosed for 2024
+  from: world-liberty-financial
+  to: donald-trump
+  category: revenue
+  amount_low: 57350000
+  amount_high: 57350000
+  currency: USD
+  value_date: 2024
+  status: disclosed
+  beneficiary: donald-trump
+  personal_benefit: proven
+  claims: [C-045]
+  dedupe_key: wlf-income-2024
+
+- id: T-021
+  title: World Liberty-linked income disclosed for 2025
+  from: world-liberty-financial
+  to: donald-trump
+  category: revenue
+  amount_low: 592000000
+  amount_high: 800000000
+  currency: USD
+  value_date: 2025
+  status: disclosed
+  beneficiary: donald-trump
+  personal_benefit: proven
+  benefit_note: The range reflects outlets' differing counts ($592M InvestmentNews; ~$791M PolitiFact; ~$800M others). It may include proceeds from the Aryam stake sale (T-024), so the two are not added.
+  claims: [C-046]
+  dedupe_key: wlf-income-2025
+
+- id: T-022
+  title: Celebration Coins (meme coin) licensing royalties, 2025
+  to: donald-trump
+  category: revenue
+  amount_low: 635000000
+  amount_high: 635070000
+  currency: USD
+  value_date: 2025
+  status: disclosed
+  beneficiary: donald-trump
+  personal_benefit: proven
+  benefit_note: Not a World Liberty payment; payer entity not modelled, so no map edge is drawn. Not connected to Israel or the Gulf in this research.
+  claims: [C-046]
+  dedupe_key: meme-coin-royalties-2025
+  hide_edge: true
+
+- id: T-023
+  title: MGX investment in Binance, settled in USD1
+  from: mgx
+  to: binance
+  category: investment-capital
+  amount_low: 2000000000
+  amount_high: 2000000000
+  currency: USD
+  value_date: 2025-05
+  status: announced
+  beneficiary: binance
+  personal_benefit: unproven
+  benefit_note: Money to Binance. WLF's benefit (stablecoin float and reserve yield) is inferred and unquantified.
+  claims: [C-047]
+  dedupe_key: mgx-binance
+
+- id: T-024
+  title: Aryam purchase of 49% of World Liberty Financial
+  from: aryam
+  to: world-liberty-financial
+  category: investment-capital
+  amount_low: 500000000
+  amount_high: 500000000
+  currency: USD
+  value_date: 2025-01
+  status: reported
+  beneficiary: world-liberty-financial
+  personal_benefit: partial
+  benefit_note: Reported (WSJ) as half paid upfront. See T-025 and T-026 for the reported flows to Trump- and Witkoff-linked entities.
+  claims: [C-048]
+  dedupe_key: aryam-wlf-stake
+
+- id: T-025
+  title: Reported upfront payment to Trump family-controlled entities
+  from: aryam
+  to: donald-trump
+  category: sale-proceeds
+  amount_low: 187000000
+  amount_high: 187000000
+  currency: USD
+  value_date: 2025-01
+  status: reported
+  beneficiary: Trump family-controlled entities
+  personal_benefit: partial
+  benefit_note: The WSJ's figure for family entities collectively. The split among family members is not reported here.
+  claims: [C-048]
+  part_of: T-024
+  dedupe_key: aryam-to-trump-entities
+
+- id: T-026
+  title: Reported payment to Witkoff-affiliated entities
+  from: aryam
+  to: steve-witkoff
+  category: sale-proceeds
+  amount_low: 31000000
+  amount_high: 31000000
+  currency: USD
+  value_date: 2025-01
+  status: reported
+  beneficiary: Witkoff family-affiliated entities
+  personal_benefit: partial
+  benefit_note: A minimum ("at least $31 million").
+  claims: [C-048]
+  part_of: T-024
+  dedupe_key: aryam-to-witkoff-entities
+
+- id: T-027
+  title: Miriam Adelson contributions to Preserve America PAC, 2024
+  from: miriam-adelson
+  to: preserve-america-pac
+  category: political-contribution
+  amount_low: 100000000
+  amount_high: 100000000
+  currency: USD
+  value_date: 2024
+  status: reported
+  beneficiary: preserve-america-pac
+  personal_benefit: none
+  benefit_note: Political spending for Trump's campaign, not income to Trump.
+  claims: [C-050]
+  dedupe_key: adelson-pap-2024
+
+- id: T-028
+  title: February 2025 emergency arms sales to Israel
+  from: israel
+  to: us-state-dept
+  category: contract-value
+  amount_low: 3010700000
+  amount_high: 4000000000
+  currency: USD
+  value_date: 2025-02-28
+  status: announced
+  beneficiary: US defense contractors
+  personal_benefit: none
+  benefit_note: Sale prices paid to US manufacturers, administered by the State Department; no Trump entity involved.
+  claims: [C-010]
+  dedupe_key: israel-arms-feb-2025
+  methodology: "Low end = 2,040.0M + 675.7M + 295.0M = $3,010.7M (AP/CBS components). High end = Arms Control Association's ~$4B aggregate."
+
+- id: T-029
+  title: 2016 MOU military aid framework (FY2019–2028)
+  from: us-state-dept
+  to: israel
+  category: government-expenditure
+  amount_low: 38000000000
+  amount_high: 38000000000
+  currency: USD
+  value_date: 2016-09
+  status: committed
+  beneficiary: israel
+  personal_benefit: none
+  benefit_note: Signed under the Obama administration; subject to annual appropriations.
+  claims: [C-009]
+  dedupe_key: mou-2016
+
+- id: T-030
+  title: Proposed "Peace to Prosperity" investment fund
+  to: p-peace-prosperity
+  category: proposed-funding
+  amount_low: 50000000000
+  amount_high: 50000000000
+  currency: USD
+  value_date: 2019-06
+  status: proposed
+  beneficiary: Palestinian territories, Egypt, Jordan, Lebanon (proposed)
+  personal_benefit: none
+  benefit_note: Never funded; no map edge is drawn.
+  claims: [C-007]
+  dedupe_key: peace-prosperity-fund
+  hide_edge: true
+
+- id: T-031
+  title: Reported fee for a permanent Board of Peace seat (per state)
+  to: p-gaza-plan
+  category: proposed-funding
+  amount_low: 1000000000
+  amount_high: 1000000000
+  currency: USD
+  value_date: 2026-01
+  status: proposed
+  beneficiary: Board of Peace (draft charter)
+  personal_benefit: unproven
+  benefit_note: A per-state threshold in a reported draft, not a payment. No evidence of any payment to Trump.
+  claims: [C-013]
+  dedupe_key: board-of-peace-fee
+  hide_edge: true
+
+- id: T-032
+  title: Jared Kushner and Ivanka Trump outside income while in government
+  from: trump-organization
+  to: jared-kushner
+  category: revenue
+  amount_low: 172000000
+  amount_high: 640000000
+  currency: USD
+  value_date: 2017–2020
+  status: disclosed
+  beneficiary: Jared Kushner and Ivanka Trump
+  personal_benefit: proven
+  benefit_note: The CREW range from their own disclosures, across many sources (e.g. the Trump DC hotel and Kushner family real estate). The edge from the Trump Organization is illustrative only.
+  claims: [C-034]
+  dedupe_key: jared-ivanka-outside-income
+  hide_edge: true
+
+- id: T-033
+  title: Ramat Gan land purchase (Trump group and Crescent Heights)
+  from: crescent-heights
+  to: israel
+  category: asset-value
+  amount_low: 44000000
+  amount_high: 44000000
+  currency: USD
+  value_date: 2006
+  status: reported
+  beneficiary: Trump group & Crescent Heights (joint)
+  personal_benefit: none
+  claims: [C-053]
+  dedupe_key: ramat-gan-land-2006
+  hide_edge: true
+
+- id: T-034
+  title: Forbes net worth estimate — 2024
+  from: donald-trump
+  to: donald-trump
+  category: net-worth-estimate
+  amount_low: 3900000000
+  amount_high: 4300000000
+  currency: USD
+  value_date: 2024
+  status: estimated
+  beneficiary: donald-trump
+  personal_benefit: none
+  claims: [C-052]
+  dedupe_key: forbes-nw-2024
+  hide_edge: true
+
+- id: T-035
+  title: Forbes net worth estimate — September 2025
+  from: donald-trump
+  to: donald-trump
+  category: net-worth-estimate
+  amount_low: 7300000000
+  amount_high: 7300000000
+  currency: USD
+  value_date: 2025-09
+  status: estimated
+  beneficiary: donald-trump
+  personal_benefit: none
+  claims: [C-052]
+  dedupe_key: forbes-nw-2025
+  hide_edge: true
+
+- id: T-036
+  title: Forbes net worth estimate — July 2026 (as cited by AP)
+  from: donald-trump
+  to: donald-trump
+  category: net-worth-estimate
+  amount_low: 6000000000
+  amount_high: 6000000000
+  currency: USD
+  value_date: 2026-07
+  status: estimated
+  beneficiary: donald-trump
+  personal_benefit: none
+  claims: [C-052]
+  dedupe_key: forbes-nw-2026
+  hide_edge: true

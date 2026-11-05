@@ -1,0 +1,823 @@
+# Source register.
+#
+# access:
+#   reviewed  - the document text was retrieved and read for this project; `quote` fields on
+#               claims citing it are verbatim from that text.
+#   located   - the URL was found via web search on the access date; its content is known only
+#               from search-result excerpts. Treat as a lead to verify, not as read.
+#   blocked   - retrieval was attempted and refused (e.g. HTTP 403). Content not verified.
+# type: government | congressional | company | court | ngo | journalism | wire | fact-check | reference
+# repeats: the original outlet whose reporting this source restates (so it is not independent).
+
+- id: S-001
+  title: "Proclamation 9683 of December 6, 2017 — Recognizing Jerusalem as the Capital of the State of Israel and Relocating the United States Embassy to Israel to Jerusalem"
+  publisher: Federal Register (Office of the Federal Register / GovInfo)
+  url: https://www.govinfo.gov/content/pkg/FR-2017-12-11/pdf/2017-26832.pdf
+  published: 2017-12-11
+  type: government
+  access: reviewed
+  accessed: 2026-10-22
+
+- id: S-002
+  title: "Presidential Proclamation Recognizing Jerusalem as the Capital of the State of Israel"
+  publisher: The White House (archived, trumpwhitehouse.archives.gov)
+  url: https://trumpwhitehouse.archives.gov/the-press-office/2017/12/06/presidential-proclamation-recognizing-jerusalem-capital-state-israel-and
+  published: 2017-12-06
+  type: government
+  access: located
+  accessed: 2026-10-22
+
+- id: S-003
+  title: "Proclamation 9852 of March 25, 2019 — Recognizing the Golan Heights as Part of the State of Israel"
+  publisher: Federal Register (Office of the Federal Register / GovInfo)
+  url: https://www.govinfo.gov/content/pkg/FR-2019-03-28/pdf/2019-06199.pdf
+  published: 2019-03-28
+  type: government
+  access: reviewed
+  accessed: 2026-10-22
+
+- id: S-004
+  title: "Full text of Pompeo's statement on settlements"
+  publisher: The Times of Israel
+  url: https://www.timesofisrael.com/full-text-of-pompeos-statement-on-settlements/
+  published: 2019-11-18
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  note: Reproduces the Secretary of State's remarks; the state.gov transcript was not retrieved.
+
+- id: S-005
+  title: "Pompeo: US no longer considers Israeli settlements illegal"
+  publisher: Al Jazeera
+  url: https://www.aljazeera.com/news/2019/11/18/pompeo-us-no-longer-considers-israeli-settlements-illegal
+  published: 2019-11-18
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-006
+  title: "Jared Kushner raised $2B from Saudi prince MBS"
+  publisher: The Real Deal
+  url: https://therealdeal.com/2022/04/11/jared-kushner-raised-2b-from-saudi-prince-mbs/
+  published: 2022-04-11
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  repeats: The New York Times
+
+- id: S-007
+  title: "Jared Kushner's PE Firm Secures $2B Investment From Fund Led By Saudi Crown Prince"
+  publisher: Bisnow
+  url: https://www.bisnow.com/news/national/capital-markets/jared-kushner-private-equity-fund-2b-saudi-wealth-crown-princer-mbs-112574
+  published: 2022-04
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  repeats: The New York Times
+
+- id: S-008
+  title: "Wyden Probes Kushner Firm Payments from Gulf States, Potential FARA Loophole"
+  publisher: U.S. Senate Committee on Finance (Chairman's News)
+  url: https://www.finance.senate.gov/chairmans-news/wyden-probes-kushner-firm-payments-from-gulf-states-potential-fara-loophole
+  published: 2024-06-12
+  type: congressional
+  access: located
+  accessed: 2026-10-22
+
+- id: S-009
+  title: "Wyden Investigation of Kushner Firm Continues; New Letter Outlines Affinity Partners' Fee Structure, Lack of Return to Investors, Questionable Deals with Foreign Governments"
+  publisher: U.S. Senate Committee on Finance (Chairman's News)
+  url: https://www.finance.senate.gov/chairmans-news/wyden-investigation-of-kushner-firm-continues-new-letter-outlines-affinity-partners-fee-structure-lack-of-return-to-investors-questionable-deals-with-foreign-governments
+  published: 2024-09-25
+  type: congressional
+  access: reviewed
+  accessed: 2026-10-22
+
+- id: S-010
+  title: "Wyden, Raskin Call for Department of Justice to Appoint a Special Counsel to Investigate Jared Kushner for Acting as an Unregistered Foreign Agent"
+  publisher: U.S. Senate Committee on Finance (Chairman's News)
+  url: https://www.finance.senate.gov/chairmans-news/wyden-raskin-call-for-department-of-justice-to-appoint-a-special-counsel-to-investigate-jared-kushner-for-acting-as-an-unregistered-foreign-agent
+  published: 2024-10-24
+  type: congressional
+  access: located
+  accessed: 2026-10-22
+
+- id: S-011
+  title: "Kushner's fund has reaped millions in fees, but so far returned no profits"
+  publisher: The Boston Globe
+  url: https://www.bostonglobe.com/2024/09/25/business/kushner-private-equity-saudi-arabia-trump
+  published: 2024-09-25
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  repeats: U.S. Senate Committee on Finance letter (S-009)
+
+- id: S-012
+  title: "Jared Kushner firm sells 25% of Phoenix Financial stake"
+  publisher: Globes
+  url: https://en.globes.co.il/en/article-1001550617
+  published: 2026-07
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-013
+  title: "Kushner sells NIS 1.05 billion stake in Israeli financial giant Phoenix to global investors"
+  publisher: Ynetnews
+  url: https://www.ynetnews.com/business/article/byukn3rsfg
+  published: 2026-07
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-014
+  title: "Jared Kushner becomes biggest shareholder in Phoenix"
+  publisher: Globes
+  url: https://en.globes.co.il/en/article-jared-kushner-set-to-become-biggest-shareholder-in-phoenix-1001499509
+  published: 2025-01
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-015
+  title: "Kushner's Affinity to pay $127M for additional Phoenix stake, securing $72M instant profit"
+  publisher: Calcalist (CTech)
+  url: https://calcalistech.com/ctechnews/article/bkgoyxhwye
+  published: 2025-01
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-016
+  title: "Kushner's firm profited from Israeli defense investments while he negotiated Gaza war end, probe finds"
+  publisher: Ynetnews
+  url: https://www.ynetnews.com/article/hkat0x25fx
+  published: 2026-10
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  repeats: CNN
+
+- id: S-017
+  title: "Jared Kushner Accuses CNN of 'Deeply Misleading' Story Tying Middle East Diplomacy to Israeli Defense Companies"
+  publisher: TheWrap
+  url: https://www.thewrap.com/media-platforms/politics/jared-kushner-cnn-misleading-middle-east-israeli-defense-companies/
+  published: 2026-10
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-018
+  title: "Top House Oversight Democrat seeks answers about Kushner's Israeli investment following CNN report"
+  publisher: CNN (syndicated via KION)
+  url: https://kioncentralcoast.com/politics/cnn-us-politics/2026/10/06/top-house-oversight-democrat-seeks-answers-about-kushners-israeli-investment-following-cnn-report/
+  published: 2026-10-06
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-019
+  title: "Electronic Arts Is Being Acquired For $55 Billion And Will Go Private"
+  publisher: Game Informer
+  url: https://gameinformer.com/2025/09/29/electronic-arts-acquired-for-55-billion
+  published: 2025-09-29
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  note: EA's own press release was not located; outlets quote it.
+
+- id: S-020
+  title: "EA acquired by PIF, Silver Lake, Affinity Partners for $55bn"
+  publisher: Advanced Television
+  url: https://www.advanced-television.com/2025/09/29/ea-acquired-by-pif-silver-lake-affinity-partners-for-55bn/
+  published: 2025-09-29
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-021
+  title: "Trump's businesses received millions from foreign entities during his presidency, House report says"
+  publisher: Associated Press (via ABC7 New York)
+  url: https://abc7ny.com/donald-trump-businesses-millions-foreign-entities/14282682/
+  published: 2024-01-04
+  type: wire
+  access: located
+  accessed: 2026-10-22
+  note: Describes the House Oversight Committee Democratic staff report "White House for Sale"; the report PDF itself was not retrieved.
+
+- id: S-022
+  title: "Donald Trump received millions from foreign governments as president"
+  publisher: The Boston Globe
+  url: https://www.bostonglobe.com/2024/01/04/nation/donald-trump-presidency-foreign-governments
+  published: 2024-01-04
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-023
+  title: "Wyden Continues Investigation into Kushner Conflicts of Interest, Influence on U.S. Foreign Policy"
+  publisher: U.S. Senate Committee on Finance (Chairman's News)
+  url: https://www.finance.senate.gov/chairmans-news/wyden-continues-investigation-into-kushner-conflicts-of-interest-influence-on-us-foreign-policy
+  published: 2022-10-13
+  type: congressional
+  access: located
+  accessed: 2026-10-22
+
+- id: S-024
+  title: "House Democrats may probe Kushners' NYC real estate deal"
+  publisher: Axios
+  url: https://www.axios.com/house-democrats-kushner-companies-666-fifth-avenue-19865df3-7fc4-434c-a62e-4bc7a5e3dea3.html
+  published: 2019
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-025
+  title: "Kushner's Deal With Brookfield For 666 Fifth Ave. Under Congressional Investigation"
+  publisher: Bisnow
+  url: https://www.bisnow.com/news/new-york/capital-markets/lawmakers-investigating-if-666-fifth-ave-deal-influenced-trump-foreigin-policy-on-qatar-107048
+  published: 2022
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-026
+  title: "Jared Kushner's family business reportedly still making financial deals with Israeli companies"
+  publisher: JTA
+  url: https://www.jta.org/2018/01/08/united-states/jared-kushners-family-business-reportedly-still-making-financial-deals-with-israeli-companies
+  published: 2018-01-08
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  repeats: The New York Times
+
+- id: S-027
+  title: "Trump son-in-law's family donated to Israeli settler groups"
+  publisher: PBS NewsHour (Associated Press)
+  url: https://www.pbs.org/newshour/politics/trump-son-laws-family-donated-israeli-settler-groups
+  published: 2016-12
+  type: wire
+  access: located
+  accessed: 2026-10-22
+  repeats: Haaretz (analysis of foundation tax filings)
+
+- id: S-028
+  title: "Kushner foundation bankrolls radical Jewish West Bank settlers"
+  publisher: The Forward
+  url: https://forward.com/news/356077/kushner-foundation-bankrolls-radical-jewish-west-bank-settlers/
+  published: 2016-12
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  repeats: Haaretz (analysis of foundation tax filings)
+
+- id: S-029
+  title: "Dar Global plans two Trump-branded projects in Riyadh"
+  publisher: AGBI (Arabian Gulf Business Insight)
+  url: https://agbi.com/real-estate/2024/12/dar-global-plans-two-trump-branded-projects-in-riyadh
+  published: 2024-12
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-030
+  title: "In a deal with Trump Organization, Dar Global will launch a $1 billion project in Saudi Arabia"
+  publisher: PBS NewsHour (Associated Press)
+  url: https://www.pbs.org/newshour/politics/in-a-deal-with-trump-organization-dar-global-will-launch-a-1-billion-project-in-saudi-arabia
+  published: 2025-09-29
+  type: wire
+  access: located
+  accessed: 2026-10-22
+
+- id: S-031
+  title: "Qatari Diar signs strategic agreement with Dar Global to develop Trump International Golf Club and Trump Villas"
+  publisher: The Trump Organization (trump.com)
+  url: https://www.trump.com/media/qatari-diar-signs-strategic-agreement-with-dar-global-to-develop-trump-international-golf-club-and-trump-villas-a-beachside-ultra-luxury-community-within-simaisma-masterplan
+  published: 2025-04-30
+  type: company
+  access: blocked
+  accessed: 2026-10-22
+  note: Returned HTTP 403 to automated retrieval on the access date.
+
+- id: S-032
+  title: "Qatari Diar, Dar Global — Trump International Golf Club & Villas, Simaisma"
+  publisher: Dar Global (press release)
+  url: https://darglobal.co.uk/press/qatari-diar-darglobal-trump-international-golf-club-villas-simaisma
+  published: 2025-04-30
+  type: company
+  access: located
+  accessed: 2026-10-22
+
+- id: S-033
+  title: "Deal signed to develop Trump-branded golf club, villas in Qatar"
+  publisher: The Peninsula (Qatar)
+  url: https://thepeninsulaqatar.com/article/30/04/2025/deal-signed-to-develop-trump-branded-golf-club-villas-in-qatar
+  published: 2025-04-30
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-034
+  title: "The Saudi real estate tycoon who's a 'member of the Trump family'"
+  publisher: Forbes Australia
+  url: https://www.forbes.com.au/news/billionaires/the-saudi-real-estate-tycoon-whos-a-member-of-the-trump-family/
+  published: 2025
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-035
+  title: "Gulf developers bring windfall to Trump family"
+  publisher: The National (UAE)
+  url: https://www.thenationalnews.com/business/2026/07/01/gulf-developers-bring-windfall-to-trump-family/
+  published: 2026-07-01
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-036
+  title: "Trump earned more than $21m from Saudi real estate developer in 2024"
+  publisher: Mortgage Professional America
+  url: https://www.mpamag.com/us/news/general/trump-earned-more-than-21m-from-saudi-real-estate-developer-in-2024/539515
+  published: 2025-06
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-037
+  title: "US defense chief refuses to disclose details of jet gifted by Qatar"
+  publisher: Anadolu Agency
+  url: https://www.aa.com.tr/en/americas/us-defense-chief-refuses-to-disclose-details-of-jet-gifted-by-qatar/3594641
+  published: 2025
+  type: wire
+  access: located
+  accessed: 2026-10-22
+
+- id: S-038
+  title: "Hegseth: Qatar jet deal for Air Force One not finalized"
+  publisher: Jewish Insider
+  url: https://jewishinsider.com/2025/06/hegseth-qatar-jet-air-force-one-deal-not-finalized-senate-appropriations-committee/
+  published: 2025-06
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-039
+  title: "US signs agreement with Qatar for converting $400m Boeing jet to Air Force One"
+  publisher: WION
+  url: https://www.wionews.com/world/us-signs-agreement-with-qatar-for-converting-400m-boeing-jet-to-air-force-one-guess-how-much-this-unconditonal-donation-will-cost-1753696705186
+  published: 2025-07
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-040
+  title: "Trump-Tied Stablecoin Used for MGX's $2 Billion Binance Deal"
+  publisher: Bloomberg
+  url: https://www.bloomberg.com/news/articles/2025-05-01/trump-linked-stablecoin-used-for-mgx-s-2-billion-binance-deal
+  published: 2025-05-01
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-041
+  title: "Trump-linked stablecoin used in $2B Abu Dhabi Binance investment"
+  publisher: Semafor
+  url: https://www.semafor.com/article/05/02/2025/trump-linked-stablecoin-used-in-2b-abu-dhabi-binance-investment
+  published: 2025-05-02
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-042
+  title: "UAE Sheikh secretly acquired 49% of Trump's World Liberty Financial days before inauguration: WSJ"
+  publisher: The Block
+  url: https://www.theblock.co/post/387931/uae-sheikh-secretly-acquired-49-of-trumps-world-liberty-financial-days-before-inauguration-wsj
+  published: 2026
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  repeats: The Wall Street Journal
+
+- id: S-043
+  title: "Trump-linked crypto venture World Liberty sold 49% stake to UAE state-affiliated firm"
+  publisher: Ledger Insights
+  url: https://www.ledgerinsights.com/trump-linked-crypto-venture-world-liberty-sold-49-stake-to-uae-state-affiliated-firm/
+  published: 2026
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  repeats: The Wall Street Journal
+
+- id: S-044
+  title: "Trump made over $57 million from World Liberty Financial's WLFI sales, new disclosure shows"
+  publisher: The Block
+  url: https://www.theblock.co/post/358186/trump-made-over-57-million-from-world-liberty-financials-wlfi-sales
+  published: 2025-06-13
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-045
+  title: "Trump reports over $600 million in income in latest financial disclosure"
+  publisher: Associated Press (via Anchorage Daily News)
+  url: https://www.adn.com/nation-world/2025/06/14/trump-reports-over-600-million-in-income-in-latest-financial-disclosure
+  published: 2025-06-14
+  type: wire
+  access: located
+  accessed: 2026-10-22
+
+- id: S-046
+  title: "Fact-check: Trump's disclosure, crypto and stocks wealth"
+  publisher: PolitiFact
+  url: https://api.politifact.com/factchecks/2026/jul/07/donald-trump/disclosure-crypto-stocks-wealth/
+  published: 2026-07-07
+  type: fact-check
+  access: located
+  accessed: 2026-10-22
+
+- id: S-047
+  title: "Trump crypto ventures generated more than $1.2 billion in disclosed proceeds"
+  publisher: InvestmentNews
+  url: https://www.investmentnews.com/alternatives/trump-crypto-ventures-generated-more-than-12-billion-in-disclosed-proceeds/267242
+  published: 2026-07
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-048
+  title: "Memo on Understanding Trump's Crypto Wealth (updated)"
+  publisher: Center for American Progress
+  url: https://www.americanprogress.org/wp-content/uploads/sites/2/2026/07/2026-07-16-Memo-on-Understanding-Trumps-Crypto-Wealth-Updated-Google-Docs.pdf
+  published: 2026-07-16
+  type: ngo
+  access: located
+  accessed: 2026-10-22
+
+- id: S-049
+  title: "Miriam Adelson Contributes $95M to Trump PAC"
+  publisher: Casino.org
+  url: https://www.casino.org/news/miriam-adelson-contributes-95m-to-trump-pac/
+  published: 2024-10
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  note: Reports figures from Preserve America PAC's FEC filings (Q3 2024); the filing itself was not retrieved.
+
+- id: S-050
+  title: "Israeli-US billionaire Miriam Adelson gives $100m to Trump campaign"
+  publisher: The New Arab
+  url: https://newarab.com/news/israeli-us-billionaire-adelson-gives-100m-trump-campaign
+  published: 2024-10
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  note: Reports figures from Preserve America PAC's FEC filings (Q3 2024); the filing itself was not retrieved.
+
+- id: S-051
+  title: "Trump to charge $1bn for permanent Board of Peace membership"
+  publisher: Al-Monitor (AFP)
+  url: https://www.al-monitor.com/originals/2026/01/trump-charge-1bn-permanent-peace-board-membership
+  published: 2026-01
+  type: wire
+  access: located
+  accessed: 2026-10-22
+
+- id: S-052
+  title: "Trump's 'Board of Peace' requires nations pay $1 billion for permanent membership"
+  publisher: Connecticut Public (NPR)
+  url: https://www.ctpublic.org/2026-01-19/trumps-board-of-peace-requires-nations-pay-1-billion-for-permanent-membership
+  published: 2026-01-19
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-053
+  title: "Jared Kushner, Trump's son-in-law, praises 'very valuable' potential of Gaza's 'waterfront property'"
+  publisher: Associated Press (via ClickOnDetroit)
+  url: https://www.clickondetroit.com/news/politics/2024/03/19/jared-kushner-trumps-son-in-law-praises-very-valuable-potential-of-gazas-waterfront-property/
+  published: 2024-03-19
+  type: wire
+  access: located
+  accessed: 2026-10-22
+
+- id: S-054
+  title: "Donald Trump's son-in-law Jared Kushner praises 'very valuable' potential of Gaza's 'waterfront property'"
+  publisher: South China Morning Post
+  url: https://amp.scmp.com/news/world/middle-east/article/3256043/donald-trumps-son-law-jared-kushner-praises-very-valuable-potential-gazas-waterfront-property
+  published: 2024-03
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-055
+  title: "Trump says US will take over Gaza, create 'Riviera of the Middle East'"
+  publisher: The Jakarta Post (AFP)
+  url: https://www.thejakartapost.com/world/2025/02/05/trump-says-us-will-take-over-gaza-create-riviera-of-the-middle-east
+  published: 2025-02-05
+  type: wire
+  access: located
+  accessed: 2026-10-22
+
+- id: S-056
+  title: "Read Trump's 20-point proposal to end the war in Gaza"
+  publisher: PBS NewsHour
+  url: https://www.pbs.org/newshour/amp/politics/read-trumps-20-point-proposal-to-end-the-war-in-gaza
+  published: 2025-09-29
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  note: Reprint of the White House text; whitehouse.gov original not retrieved.
+
+- id: S-057
+  title: "What Jared Kushner brings to the negotiating table in the Middle East"
+  publisher: NPR (via WHRO)
+  url: https://www.whro.org/2025-10-23/what-jared-kushner-brings-to-the-negotiating-table-in-the-middle-east
+  published: 2025-10-23
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-058
+  title: "Kushner returns to team Trump, as ethical questions swirl"
+  publisher: Al-Monitor (AFP)
+  url: https://www.al-monitor.com/originals/2025/12/kushner-returns-team-trump-ethical-questions-swirl
+  published: 2025-12
+  type: wire
+  access: located
+  accessed: 2026-10-22
+
+- id: S-059
+  title: "Jared and Ivanka made up to $640 million in the White House"
+  publisher: Citizens for Responsibility and Ethics in Washington (CREW)
+  url: https://www.citizensforethics.org/reports-investigations/crew-investigations/jared-and-ivanka-made-up-to-640-million-in-the-white-house/
+  published: 2021-02-08
+  type: ngo
+  access: reviewed
+  accessed: 2026-10-22
+
+- id: S-060
+  title: "Fact check: Ivanka Trump, Jared Kushner did not earn $640 million dollars"
+  publisher: Lead Stories
+  url: https://leadstories.com/hoax-alert/2022/09/fact-check-ivanka-trump-jared-kushner-did-not-earn-640-million-dollars.html
+  published: 2022-09
+  type: fact-check
+  access: located
+  accessed: 2026-10-22
+
+- id: S-061
+  title: "Trump administration approves major nearly $3 billion arms sale to Israel"
+  publisher: CBS News
+  url: https://www.cbsnews.com/news/trump-approves-3-billion-arms-sale-israel
+  published: 2025-02-28
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-062
+  title: "Rubio Bypasses Congress on Israel Arms Sale"
+  publisher: Arms Control Association (Arms Control Today)
+  url: https://www.armscontrol.org/act/2025-04/news-briefs/rubio-bypasses-congress-israel-arms-sale
+  published: 2025-04
+  type: ngo
+  access: located
+  accessed: 2026-10-22
+
+- id: S-063
+  title: "Trump hosts Israel, Bahrain and UAE for signing of historic diplomatic deals"
+  publisher: CBS News
+  url: https://www.cbsnews.com/amp/news/trump-ceremony-israel-bahrain-uae-diplomatic-deals-today-2020-09-15
+  published: 2020-09-15
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-064
+  title: "Israel moves to name Golan settlement after Trump"
+  publisher: Fox News (Associated Press)
+  url: https://www.foxnews.com/world/israel-moves-to-name-golan-settlement-after-trump.amp
+  published: 2019-06
+  type: wire
+  access: located
+  accessed: 2026-10-22
+
+- id: S-065
+  title: "U.S. Foreign Aid to Israel (RL33222)"
+  publisher: Congressional Research Service
+  url: https://www.congress.gov/crs_external_products/RL/PDF/RL33222/RL33222.39.pdf
+  published: 2020-11-16
+  type: government
+  access: reviewed
+  accessed: 2026-10-22
+
+- id: S-066
+  title: "Kushner's Affinity Gets Additional $1.5 Billion From Qatar, Abu Dhabi's Lunate"
+  publisher: Bloomberg
+  url: https://www.bloomberg.com/news/articles/2024-12-20/jared-kushner-s-affinity-gets-1-5-billion-more-from-qatar-abu-dhabi-s-lunate
+  published: 2024-12-20
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-067
+  title: "Assets at Kushner's Affinity soar after Gulf cash injection"
+  publisher: AGBI
+  url: https://www.agbi.com/finance/2025/03/assets-at-kushners-affinity-soar-after-gulf-cash-injection/
+  published: 2025-03
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  note: Cites Affinity's SEC filings (Form ADV); the filing itself was not retrieved.
+
+- id: S-068
+  title: "Trump's golf businesses netted nearly $395M in income in 2025"
+  publisher: Front Office Sports
+  url: https://frontofficesports.com/trumps-golf-businesses-netted-nearly-395m-in-income-in-2025/
+  published: 2026-08
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-069
+  title: "Trump's growing pro golf influence on display at Bedminster"
+  publisher: Front Office Sports
+  url: https://frontofficesports.com/article/trumps-growing-pro-golf-influence-on-display-at-bedminster/
+  published: 2026-08
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-070
+  title: "Donald Trump sues Ramat Gan developer"
+  publisher: Globes
+  url: https://en.globes.co.il/en/article-1000342879
+  published: 2008
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-071
+  title: "Ranking Member Raskin slams Jared Kushner's failure to respond to Congress and expands probe into suspicious $120 million Albanian land purchase"
+  publisher: House Judiciary Committee Democrats
+  url: https://democrats-judiciary.house.gov/media-center/press-releases/ranking-member-raskin-slams-jared-kushner-s-failure-to-respond-to-congress-and-expands-probe-into-suspicious-120-million-albanian-land-purchase
+  published: 2026-08
+  type: congressional
+  access: located
+  accessed: 2026-10-22
+
+- id: S-072
+  title: "Congressional Dems probe envoy Jared Kushner's Arab money ties"
+  publisher: Asia Times
+  url: https://asiatimes.com/2026/04/congressional-dems-probe-envoy-jared-kushners-arab-money-ties/
+  published: 2026-04
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-073
+  title: "New York Times: Democrats demand answers on Jared Kushner's Mideast business dealings"
+  publisher: Office of Rep. Robert Garcia (reposting The New York Times)
+  url: https://robertgarcia.house.gov/media/in-the-news/new-york-times-democrats-demand-answers-jared-kushners-mideast-business-dealings
+  published: 2026-03
+  type: congressional
+  access: located
+  accessed: 2026-10-22
+  repeats: The New York Times
+
+- id: S-074
+  title: "Steve Witkoff Has Yet to Divest Trump-Linked Crypto Assets"
+  publisher: Bloomberg Law
+  url: https://news.bloomberglaw.com/securities-law/steve-witkoff-has-yet-to-divest-trump-linked-crypto-assets
+  published: 2025
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-075
+  title: "House Foreign Affairs Ranking Member Meeks, Amo, Garcia demand investigation"
+  publisher: Office of Rep. Gregory Meeks
+  url: https://meeks.house.gov/media/press-releases/house-foreign-affairs-ranking-member-meeks-amo-garcia-demand-investigation
+  published: 2025
+  type: congressional
+  access: located
+  accessed: 2026-10-22
+
+- id: S-076
+  title: "US weighs Sheldon Adelson offer to fund Jerusalem embassy"
+  publisher: Associated Press (via News Tribune)
+  url: https://www.newstribune.com/news/2018/feb/24/US-weighs-Sheldon-Adelson-offer-to-fund-Jerusalem-/
+  published: 2018-02-24
+  type: wire
+  access: located
+  accessed: 2026-10-22
+
+- id: S-077
+  title: "White House unveils economic portion of peace plan"
+  publisher: JTA
+  url: https://www.jta.org/2019/06/22/united-states/white-house-unveils-economic-portion-of-peace-plan-including-portions-that-will-unsettle-netanyahu
+  published: 2019-06-22
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-078
+  title: "How Much Richer Donald Trump Has Gotten Over the Last 5 Years?"
+  publisher: Nasdaq (GOBankingRates)
+  url: https://www.nasdaq.com/articles/how-much-richer-donald-trump-has-gotten-over-last-5-years
+  published: 2025
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  repeats: Forbes
+
+- id: S-079
+  title: "U.S. Embassy in Jerusalem will open in May to celebrate Israeli independence"
+  publisher: Newsweek
+  url: https://www.newsweek.com/us-jerusalem-embassy-will-open-may-celebrate-israeli-independence-say-818463
+  published: 2018-02-23
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-080
+  title: "Kushner's Gaza role raises questions over his Israeli investments: CNN"
+  publisher: Arab News
+  url: https://www.arabnews.pk/world/kushners-gaza-role-raises-questions-over-his-israeli-investments-cnn-3002965
+  published: 2026-10
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+  repeats: CNN
+
+- id: S-081
+  title: "Israel names Golan Heights settlement after President Trump"
+  publisher: The Daily Beast
+  url: https://thedailybeast.com/israel-names-golan-heights-settlement-after-president-trump
+  published: 2019-06-16
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-082
+  title: "Trump Administration Unveils $50 Billion Economic Component of Israeli-Palestinian Peace Initiative at Bahrain Meeting"
+  publisher: The Algemeiner
+  url: https://www.algemeiner.com/2019/06/25/trump-administration-unveils-50-billion-economic-component-of-israeli-palestinian-peace-initiative-at-bahrain-meeting/
+  published: 2019-06-25
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-083
+  title: "New era: UAE, Israel, US and Bahrain sign Abraham Accord"
+  publisher: Khaleej Times
+  url: https://www.khaleejtimes.com/uae/new-era-uae-israel-us-and-bahrain-sign-abraham-accord
+  published: 2020-09-15
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-084
+  title: "Here are the details of Trump's 20-point Gaza peace plan"
+  publisher: The New Arab
+  url: https://www.newarab.com/news/here-are-details-trumps-20-point-gaza-peace-plan
+  published: 2025-09-29
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-085
+  title: "Slithering through FARA loophole"
+  publisher: O'Dwyer's
+  url: https://www.odwyerpr.com/story/public/21459/2024-06-25/slithering-through-fara-loophole.html
+  published: 2024-06-25
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-086
+  title: "Raskin, Wyden call on Department of Justice to appoint special counsel to investigate Jared Kushner"
+  publisher: House Oversight Committee Democrats
+  url: https://oversightdemocrats.house.gov/news/press-releases/raskin-wyden-call-department-justice-appoint-special-counsel-investigate-jared
+  published: 2024-10-24
+  type: congressional
+  access: located
+  accessed: 2026-10-22
+  repeats: U.S. Senate Committee on Finance letter (S-010)
+
+- id: S-087
+  title: "Top Democrats urge Justice Department to investigate Jared Kushner's Saudi dealings"
+  publisher: National Review
+  url: https://nationalreview.com/news/top-democrats-urge-justice-department-to-investigate-jared-kushners-saudi-dealings/amp
+  published: 2024-10-24
+  type: journalism
+  access: located
+  accessed: 2026-10-22
+
+- id: S-088
+  title: "The Latest: Netanyahu and Trump to meet at the White House"
+  publisher: Associated Press (via ClickOnDetroit)
+  url: https://www.clickondetroit.com/news/politics/2025/02/04/the-latest-netanyahu-and-trump-to-meet-at-the-white-house/
+  published: 2025-02-04
+  type: wire
+  access: located
+  accessed: 2026-10-22

@@ -1,0 +1,91 @@
+# Non-monetary relationships. Money edges come from transactions.yaml.
+# kind:
+#   family     - family tie (context; carries no implication of benefit)
+#   role       - office, employment or founder relationship
+#   ownership  - equity or controlling interest
+#   business   - commercial agreement without a disclosed amount (licence, partnership)
+#   policy     - an actor's documented policy decision or proposal
+#   oversight  - a congressional inquiry, letter or report about the target
+#   reported   - relationship asserted by credible reporting but not independently confirmed
+#   inference  - analytical inference (never drawn as fact)
+# claims: the claim(s) whose evidence supports this edge. Every edge needs at least one.
+# An edge never implies that one entity caused the other to benefit.
+
+# ── family & roles ─────────────────────────────────────────────────────────
+- {id: R-001, source: donald-trump, target: jared-kushner, kind: family, label: son-in-law, claims: [C-020]}
+- {id: R-002, source: donald-trump, target: ivanka-trump, kind: family, label: daughter, claims: [C-034]}
+- {id: R-003, source: donald-trump, target: eric-trump, kind: family, label: son, claims: [C-048]}
+- {id: R-004, source: donald-trump, target: donald-trump-jr, kind: family, label: son, claims: [C-049]}
+- {id: R-005, source: jared-kushner, target: ivanka-trump, kind: family, label: spouse, claims: [C-034]}
+- {id: R-006, source: charles-kushner, target: jared-kushner, kind: family, label: father, claims: [C-037]}
+
+- {id: R-010, source: jared-kushner, target: affinity-partners, kind: role, label: founder & CEO, claims: [C-020, C-024]}
+- {id: R-011, source: charles-kushner, target: kushner-companies, kind: role, label: founder, claims: [C-036]}
+- {id: R-012, source: charles-kushner, target: kushner-foundation, kind: role, label: co-founder, claims: [C-037]}
+- {id: R-013, source: eric-trump, target: trump-organization, kind: role, label: executive vice president, claims: [C-043]}
+- {id: R-014, source: donald-trump-jr, target: trump-organization, kind: role, label: executive vice president, claims: [C-041]}
+- {id: R-015, source: donald-trump, target: trump-organization, kind: ownership, label: owner (via trust while in office), claims: [C-042, C-040]}
+- {id: R-016, source: donald-trump, target: world-liberty-financial, kind: ownership, label: family entities hold equity & tokens, claims: [C-045, C-046]}
+- {id: R-017, source: steve-witkoff, target: world-liberty-financial, kind: role, label: co-founder; retained interest, claims: [C-049]}
+- {id: R-018, source: zach-witkoff, target: world-liberty-financial, kind: role, label: co-founder, claims: [C-047]}
+- {id: R-019, source: steve-witkoff, target: zach-witkoff, kind: family, label: father, claims: [C-049]}
+- {id: R-020, source: eric-trump, target: world-liberty-financial, kind: role, label: co-founder; reported signatory of 49% sale, claims: [C-048]}
+- {id: R-021, source: donald-trump-jr, target: world-liberty-financial, kind: role, label: co-founder, claims: [C-049]}
+- {id: R-022, source: jared-kushner, target: p-gaza-plan, kind: role, label: unpaid envoy in ceasefire talks, claims: [C-029]}
+- {id: R-023, source: steve-witkoff, target: p-gaza-plan, kind: role, label: Special Envoy to the Middle East, claims: [C-049]}
+- {id: R-024, source: tahnoon, target: mgx, kind: role, label: chairman, claims: [C-047]}
+- {id: R-025, source: tahnoon, target: aryam, kind: reported, label: reported backer, claims: [C-048]}
+- {id: R-026, source: saudi-pif, target: liv-golf, kind: ownership, label: backer, claims: [C-051]}
+- {id: R-027, source: qia, target: brookfield, kind: ownership, label: investor in Brookfield Property Partners, claims: [C-036]}
+- {id: R-028, source: qatar, target: qia, kind: ownership, label: sovereign wealth fund, claims: [C-024]}
+- {id: R-029, source: qatar, target: qatari-diar, kind: ownership, label: state real-estate company, claims: [C-043]}
+- {id: R-030, source: saudi-arabia, target: saudi-pif, kind: ownership, label: sovereign wealth fund, claims: [C-020]}
+- {id: R-031, source: uae, target: lunate, kind: reported, label: Abu Dhabi-based, claims: [C-024]}
+- {id: R-032, source: jared-kushner, target: kushner-companies, kind: role, label: former CEO; family interest, claims: [C-036, C-035]}
+
+# ── business (no disclosed amount on the edge) ─────────────────────────────
+- {id: R-040, source: dar-global, target: trump-organization, kind: business, label: brand licence — Oman, Jeddah, Riyadh, Dubai, claims: [C-041]}
+- {id: R-041, source: qatari-diar, target: dar-global, kind: business, label: Simaisma golf & villas agreement, claims: [C-043]}
+- {id: R-042, source: affinity-partners, target: electronic-arts, kind: business, label: consortium member in $55B take-private, claims: [C-030]}
+- {id: R-043, source: silver-lake, target: electronic-arts, kind: business, label: consortium member, claims: [C-030]}
+- {id: R-044, source: affinity-partners, target: phoenix-financial, kind: ownership, label: largest shareholder (7.4% after July 2026), claims: [C-025, C-026]}
+- {id: R-045, source: phoenix-financial, target: elbit-systems, kind: reported, label: portfolio holding (~$265M per CNN), claims: [C-027]}
+- {id: R-046, source: liv-golf, target: trump-organization, kind: business, label: tournaments at Trump courses; amount undisclosed, claims: [C-051]}
+- {id: R-047, source: bank-hapoalim, target: kushner-companies, kind: reported, label: lender (at least four loans), claims: [C-035]}
+- {id: R-048, source: world-liberty-financial, target: binance, kind: business, label: USD1 used to settle MGX deal, claims: [C-047]}
+- {id: R-049, source: crescent-heights, target: trump-organization, kind: business, label: Ramat Gan partner; later sued, claims: [C-053]}
+- {id: R-050, source: israel, target: phoenix-financial, kind: policy, label: regulator approved stake increase (Jan 2025), claims: [C-025]}
+
+# ── policy decisions ───────────────────────────────────────────────────────
+- {id: R-060, source: donald-trump, target: p-jerusalem, kind: policy, label: signed Proclamation 9683, claims: [C-001]}
+- {id: R-061, source: donald-trump, target: p-golan, kind: policy, label: signed Proclamation 9852, claims: [C-004]}
+- {id: R-062, source: us-state-dept, target: p-settlements, kind: policy, label: Pompeo legal position, claims: [C-006]}
+- {id: R-063, source: jared-kushner, target: p-peace-prosperity, kind: policy, label: presented economic plan, claims: [C-007]}
+- {id: R-064, source: donald-trump, target: p-abraham, kind: policy, label: hosted signing, claims: [C-008]}
+- {id: R-065, source: us-state-dept, target: p-arms-2025, kind: policy, label: emergency determination, claims: [C-010]}
+- {id: R-066, source: donald-trump, target: p-gaza-takeover, kind: policy, label: announced proposal, claims: [C-011]}
+- {id: R-067, source: donald-trump, target: p-gaza-plan, kind: policy, label: chairs Board of Peace, claims: [C-012, C-013]}
+- {id: R-068, source: us-dod, target: p-qatar-jet, kind: policy, label: accepted aircraft, claims: [C-044]}
+- {id: R-069, source: p-jerusalem, target: israel, kind: policy, label: recognition of capital, claims: [C-001]}
+- {id: R-070, source: p-golan, target: israel, kind: policy, label: recognition of sovereignty, claims: [C-004]}
+- {id: R-071, source: p-settlements, target: israel, kind: policy, label: settlements legal position, claims: [C-006]}
+- {id: R-072, source: p-arms-2025, target: israel, kind: policy, label: munitions & bulldozers, claims: [C-010]}
+- {id: R-073, source: p-abraham, target: uae, kind: policy, label: normalization with Israel, claims: [C-008]}
+- {id: R-074, source: israel, target: donald-trump, kind: policy, label: named "Trump Heights" — no money, claims: [C-005]}
+- {id: R-075, source: sheldon-adelson, target: p-jerusalem, kind: reported, label: reported offer to fund embassy (outcome unknown), claims: [C-003]}
+- {id: R-076, source: qatar, target: p-qatar-jet, kind: business, label: donor of aircraft, claims: [C-044]}
+- {id: R-077, source: p-mou-2016, target: israel, kind: policy, label: pre-Trump aid framework, claims: [C-009]}
+- {id: R-078, source: preserve-america-pac, target: donald-trump, kind: political, label: super PAC supporting Trump, claims: [C-050]}
+
+# ── oversight ──────────────────────────────────────────────────────────────
+- {id: R-080, source: senate-finance, target: affinity-partners, kind: oversight, label: 2024 investigation; fee findings, claims: [C-021, C-022]}
+- {id: R-081, source: senate-finance, target: jared-kushner, kind: oversight, label: special counsel request (with Raskin), claims: [C-023]}
+- {id: R-082, source: senate-finance, target: kushner-companies, kind: oversight, label: 666 Fifth Avenue inquiry, claims: [C-036]}
+- {id: R-083, source: house-oversight-dems, target: trump-organization, kind: oversight, label: "\"White House for Sale\" report (2024)", claims: [C-040]}
+- {id: R-084, source: house-oversight-dems, target: affinity-partners, kind: oversight, label: Phoenix letter (Oct 2026), claims: [C-028]}
+- {id: R-085, source: house-judiciary-dems, target: affinity-partners, kind: oversight, label: 2026 inquiry ($6.16B AUM claim), claims: [C-031]}
+
+# ── inferences ─────────────────────────────────────────────────────────────
+- {id: R-090, source: saudi-pif, target: p-gaza-plan, kind: inference, label: investor in Kushner's fund & party to regional diplomacy, claims: [C-060, C-029]}
+- {id: R-091, source: aryam, target: p-gaza-plan, kind: inference, label: WLF counterparty while Witkoff negotiates, claims: [C-060]}
+- {id: R-092, source: elbit-systems, target: jared-kushner, kind: inference, label: indirect exposure via Phoenix; no causal link shown, claims: [C-062]}

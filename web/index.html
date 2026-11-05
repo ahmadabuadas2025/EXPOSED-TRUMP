@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" style="background:#0f1218">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f1218" />
+    <title>Exposed-Trump — the evidence, mapped</title>
+    <meta name="description" content="An evidence-based map of Donald Trump's and his family's financial interests, Gulf business ties, and US policy toward Israel. Every link cites a source." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230f1218'/><circle cx='10' cy='11' r='4' fill='%23eda100'/><circle cx='22' cy='21' r='4' fill='%23eda100'/><path d='M10 11 22 21' stroke='%23eda100' stroke-width='2.5'/></svg>" />
+    <!-- Every page needs the evidence data, so start fetching it alongside the scripts. -->
+    <link rel="preload" href="./data/bundle.json" as="fetch" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

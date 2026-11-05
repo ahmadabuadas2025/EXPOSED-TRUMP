@@ -1,0 +1,948 @@
+# Claims (findings). Each claim is one checkable statement.
+#
+# classification (how well the statement itself is established):
+#   verified | corroborated | reported | disputed | unverified | inference
+# connection (what the evidence shows about money and policy — see METHODOLOGY.md):
+#   policy-decision        1. a documented policy decision
+#   financial-relationship 2. a documented financial relationship
+#   economic-benefit       3. a documented direct or indirect economic benefit
+#   plausible-unproven     4. a plausible but unproven connection
+#   no-connection          5. no established financial connection
+# track: timeline lane — policy | financial | oversight | diplomacy | analysis
+#   (financial and policy events are shown in separate lanes; adjacency is not causation)
+# confidence: high | medium | low
+# sources[].quote is only filled where the source has access: reviewed.
+# Wording rule: statements attribute contested figures to whoever published them.
+
+# ═══ US policy toward Israel ═══════════════════════════════════════════════
+
+- id: C-001
+  track: policy
+  title: Trump recognized Jerusalem as Israel's capital and ordered the embassy moved
+  statement: On December 6, 2017, President Trump signed Proclamation 9683 recognizing Jerusalem as the capital of Israel and directing the relocation of the US Embassy from Tel Aviv to Jerusalem.
+  topics: [israel-policy]
+  regions: [Israel, United States]
+  entities: [donald-trump, p-jerusalem, israel]
+  event_date: 2017-12-06
+  classification: verified
+  connection: policy-decision
+  confidence: high
+  limitations: Establishes the decision only. It says nothing about motive or about any financial benefit to anyone.
+  sources:
+    - id: S-001
+      locator: "82 FR 58331 (Vol. 82, No. 236, Dec. 11, 2017)"
+      quote: "I have determined that it is time for the United States to officially recognize Jerusalem as the capital of Israel."
+    - id: S-002
+      locator: White House archive, full text
+
+- id: C-002
+  track: policy
+  title: The interim embassy in Jerusalem was scheduled to open on May 14, 2018
+  statement: The State Department told Congress that an interim US embassy in Jerusalem, housed in an existing consular facility in the Arnona neighborhood, would open on May 14, 2018, coinciding with the 70th anniversary of Israel's independence.
+  topics: [israel-policy]
+  regions: [Israel]
+  entities: [p-jerusalem, us-state-dept]
+  event_date: 2018-05-14
+  classification: corroborated
+  connection: policy-decision
+  confidence: high
+  limitations: The sources here pre-date the opening and describe the plan. The opening itself is widely reported but is not separately sourced in this register.
+  sources:
+    - id: S-076
+      locator: AP report, Feb 2018
+    - id: S-079
+      locator: Newsweek, Feb 23, 2018
+  related: [C-001, C-003]
+
+- id: C-003
+  track: financial
+  title: Sheldon Adelson reportedly offered to pay for part of the Jerusalem embassy
+  statement: According to four US officials who spoke to the Associated Press in February 2018, the administration was weighing an offer from Republican donor Sheldon Adelson to pay for at least part of the new embassy in Jerusalem, and State Department lawyers were examining whether private donations could legally be accepted.
+  topics: [israel-policy, political-money]
+  regions: [Israel, United States]
+  entities: [sheldon-adelson, p-jerusalem, us-state-dept]
+  event_date: 2018-02-23
+  classification: reported
+  connection: plausible-unproven
+  confidence: medium
+  limitations: Anonymous officials; a single originating report (AP). This register found no record of whether the offer was accepted or any money paid. An offer to fund a government building is not a payment to Trump.
+  sources:
+    - id: S-076
+      locator: AP report reproduced by News Tribune
+  related: [C-002, C-050]
+
+- id: C-004
+  track: policy
+  title: Trump recognized the Golan Heights as part of Israel
+  statement: On March 25, 2019, President Trump signed Proclamation 9852 declaring that the United States recognizes the Golan Heights as part of the State of Israel.
+  topics: [israel-policy]
+  regions: [Israel, Syria]
+  entities: [donald-trump, p-golan, israel]
+  event_date: 2019-03-25
+  classification: verified
+  connection: policy-decision
+  confidence: high
+  limitations: Establishes the decision only.
+  sources:
+    - id: S-003
+      locator: "84 FR 11875 (Vol. 84, No. 60, Mar. 28, 2019), operative paragraph"
+      quote: "do hereby proclaim that, the United States recognizes that the Golan Heights are part of the State of Israel."
+
+- id: C-005
+  track: policy
+  title: Israel named a Golan community "Trump Heights" — no money involved
+  statement: In June 2019 Israel's cabinet renamed the small Golan community of Bruchim (about ten residents) "Ramat Trump" ("Trump Heights") in appreciation of the Golan recognition. Trump publicly thanked Israel for "this great honor."
+  topics: [israel-policy]
+  regions: [Israel]
+  entities: [israel, donald-trump, p-golan]
+  event_date: 2019-06-16
+  classification: corroborated
+  connection: no-connection
+  confidence: high
+  limitations: A symbolic naming. No document reviewed shows any payment, licence fee, or property interest for Trump or his family.
+  sources:
+    - id: S-064
+      locator: AP report
+    - id: S-081
+      locator: Daily Beast report
+  related: [C-004]
+
+- id: C-006
+  track: policy
+  title: The US stopped calling West Bank settlements inconsistent with international law
+  statement: On November 18, 2019, Secretary of State Mike Pompeo announced that the US would no longer follow a 1978 State Department legal opinion, and that establishing Israeli civilian settlements in the West Bank is "not per se inconsistent with international law." He said the US expressed no view on any individual settlement.
+  topics: [israel-policy]
+  regions: [West Bank, Israel]
+  entities: [us-state-dept, p-settlements, israel]
+  event_date: 2019-11-18
+  classification: corroborated
+  connection: policy-decision
+  confidence: high
+  limitations: The official state.gov transcript was not retrieved; the text is from a newspaper reproduction plus independent reporting.
+  sources:
+    - id: S-004
+      locator: Full text of remarks
+    - id: S-005
+      locator: Al Jazeera report
+
+- id: C-007
+  track: policy
+  title: Kushner presented a $50 billion economic plan with no named funders
+  statement: In June 2019 the White House, led by Jared Kushner, released the economic portion of its "Peace to Prosperity" plan, proposing about $50 billion of investment across the Palestinian territories, Egypt, Jordan and Lebanon. It was conditional on a political settlement and did not name its funders. Kushner said he hoped wealthy Gulf states, other countries and private investors would pay for much of it.
+  topics: [israel-policy, gulf-business]
+  regions: [Palestinian territories, Gulf]
+  entities: [jared-kushner, p-peace-prosperity]
+  event_date: 2019-06-22
+  classification: corroborated
+  connection: policy-decision
+  confidence: high
+  limitations: A proposal, not a funded programme. No disbursement is documented here. The political portion (January 2020) is not separately sourced in this register.
+  sources:
+    - id: S-077
+      locator: JTA, June 22, 2019
+    - id: S-082
+      locator: Algemeiner, June 25, 2019
+
+- id: C-008
+  track: policy
+  title: Israel, the UAE and Bahrain signed the Abraham Accords at the White House
+  statement: On September 15, 2020, President Trump hosted a White House ceremony at which Israel, the United Arab Emirates and Bahrain signed normalization agreements, with the US participating as a witness.
+  topics: [israel-policy, gulf-business]
+  regions: [Israel, UAE, Bahrain]
+  entities: [donald-trump, p-abraham, israel, uae]
+  event_date: 2020-09-15
+  classification: corroborated
+  connection: policy-decision
+  confidence: high
+  limitations: The sources here do not describe Kushner's negotiating role, so it is not asserted. Later Gulf investments in Kushner's fund are documented separately (C-020, C-024); no document links them to the Accords.
+  sources:
+    - id: S-063
+      locator: CBS News live coverage
+    - id: S-083
+      locator: Khaleej Times
+
+- id: C-009
+  track: policy
+  title: The 2016 aid agreement ($38 billion, FY2019–2028) predates Trump
+  statement: The US and Israel signed their third 10-year military aid memorandum in 2016, under President Obama. It covers FY2019–FY2028 and totals $38 billion ($33 billion in Foreign Military Financing plus $5 billion for missile defense), subject to annual appropriations.
+  topics: [israel-policy]
+  regions: [Israel, United States]
+  entities: [p-mou-2016, israel]
+  event_date: 2016-09
+  classification: verified
+  connection: no-connection
+  confidence: high
+  limitations: Included as context. The baseline flow of US military aid to Israel during both Trump terms comes from an agreement signed before he took office, so it cannot be attributed to his decisions.
+  sources:
+    - id: S-065
+      locator: "CRS RL33222 (updated Nov. 16, 2020), Summary"
+      quote: "the United States pledged to provide—subject to congressional appropriation—$38 billion in military aid ($33 billion in Foreign Military Financing grants plus $5 billion in missile defense appropriations)"
+
+- id: C-010
+  track: policy
+  title: The Trump administration fast-tracked roughly $3 billion in arms sales to Israel
+  statement: On February 28, 2025, the State Department notified Congress of emergency sales to Israel, bypassing the usual congressional review. AP and CBS reported three components — bombs and warheads worth $2.04 billion, other munitions worth $675.7 million, and Caterpillar D9 bulldozers worth $295 million.
+  topics: [israel-policy]
+  regions: [Israel]
+  entities: [us-state-dept, p-arms-2025, israel]
+  event_date: 2025-02-28
+  classification: corroborated
+  connection: policy-decision
+  confidence: high
+  limitations: The Arms Control Association describes an emergency declaration covering about $4 billion, which may be a different aggregate; the discrepancy is unresolved. These sales are paid for by Israel, including with US-funded FMF, and are not income to any Trump entity.
+  sources:
+    - id: S-061
+      locator: CBS News, Feb 28, 2025
+    - id: S-062
+      locator: Arms Control Today, Apr 2025
+  related: [C-009]
+
+- id: C-011
+  track: policy
+  title: Trump proposed a US "takeover" of Gaza and a "Riviera of the Middle East"
+  statement: At a February 4, 2025 press conference with Benjamin Netanyahu, Trump proposed that the US take a long-term ownership position in Gaza, resettle its population elsewhere and lead its redevelopment, describing a possible "Riviera of the Middle East."
+  topics: [israel-policy, gaza]
+  regions: [Gaza]
+  entities: [donald-trump, p-gaza-takeover]
+  event_date: 2025-02-04
+  classification: corroborated
+  connection: policy-decision
+  confidence: high
+  limitations: A stated proposal. No document reviewed shows a Trump or family business interest in Gaza land or reconstruction contracts.
+  sources:
+    - id: S-055
+      locator: AFP report
+    - id: S-088
+      locator: AP live coverage, Feb 4, 2025 ("long-term ownership position")
+  related: [C-033, C-012]
+
+- id: C-012
+  track: policy
+  title: The 20-point Gaza plan puts reconstruction funding under a Trump-chaired Board of Peace
+  statement: The White House plan of September 29, 2025 provides for a ceasefire, hostage releases, a technocratic Palestinian committee to run Gaza, and a "Board of Peace" headed and chaired by President Trump that would set the framework for, and handle the funding of, Gaza's redevelopment.
+  topics: [israel-policy, gaza]
+  regions: [Gaza]
+  entities: [donald-trump, p-gaza-plan]
+  event_date: 2025-09-29
+  classification: corroborated
+  connection: policy-decision
+  confidence: high
+  limitations: The whitehouse.gov original was not retrieved; the text comes from a full-text reprint. Chairing a body that controls funds is not, by itself, a financial benefit.
+  sources:
+    - id: S-056
+      locator: Reprint of plan text, point on the Board of Peace
+    - id: S-084
+      locator: The New Arab summary of plan
+  related: [C-013]
+
+- id: C-013
+  track: policy
+  title: A draft Board of Peace charter reportedly sets a $1 billion fee for permanent seats
+  statement: AFP and NPR reported in January 2026 that a draft Board of Peace charter exempts states contributing more than $1 billion in cash in the first year from the three-year membership term and names Trump as chairman. The White House called reports about the fee "misleading."
+  topics: [gaza, israel-policy]
+  regions: [Gaza, International]
+  entities: [donald-trump, p-gaza-plan]
+  event_date: 2026-01-19
+  classification: reported
+  connection: plausible-unproven
+  confidence: medium
+  limitations: Based on a reported draft. This register has not seen the final charter or any record of payments. No evidence shows fees flowing to Trump personally.
+  responses: The White House described reports about the fee as "misleading."
+  sources:
+    - id: S-051
+      locator: AFP via Al-Monitor
+    - id: S-052
+      locator: NPR via Connecticut Public
+  related: [C-012]
+
+# ═══ Jared Kushner & Affinity Partners ═══════════════════════════════════
+
+- id: C-020
+  track: financial
+  title: Saudi Arabia's PIF committed $2 billion to Kushner's new fund
+  statement: Saudi Arabia's Public Investment Fund committed $2 billion to Affinity Partners, which Jared Kushner founded after leaving the White House. The New York Times reported (April 2022) that a PIF screening panel objected, citing inexperienced management and an "excessive" fee, and that the full board, chaired by Crown Prince Mohammed bin Salman, approved it anyway. Senate Finance Chairman Wyden's 2024 letter refers to the PIF's "$2 billion in committed funds."
+  topics: [family-finance, gulf-business]
+  regions: [Saudi Arabia, United States]
+  entities: [saudi-pif, affinity-partners, jared-kushner]
+  event_date: 2021
+  classification: corroborated
+  connection: financial-relationship
+  confidence: high
+  limitations: A $2 billion commitment is investment capital managed by the fund, not money paid to Kushner. His personal income comes from fees and any profit share, which are not publicly broken out. The screening-panel detail rests on the NYT's reporting of internal documents.
+  responses: Affinity's spokesperson said the firm is proud to count the PIF and other organisations with careful screening criteria among its investors.
+  sources:
+    - id: S-006
+      locator: Summary of NYT report
+    - id: S-007
+      locator: Summary of NYT report
+    - id: S-009
+      locator: Key findings, fee section
+      quote: "charging its lead investor, the Saudi Public Investment Fund, a 1.25 percent annual fee on $2 billion in committed funds."
+  related: [C-021, C-024]
+
+- id: C-021
+  track: oversight
+  title: Senate Finance Chairman says Affinity collected up to $157M in fees with no returns
+  statement: According to Senate Finance Chairman Ron Wyden's September 25, 2024 letter, Affinity Partners had "pocketed as much as $157 million in fees from foreign clients, including $87 million from the Saudi government," and had generated no return on investment as of July 2024.
+  topics: [family-finance, gulf-business, oversight]
+  regions: [Saudi Arabia, United States]
+  entities: [senate-finance, affinity-partners, saudi-pif, jared-kushner]
+  event_date: 2024-09-25
+  classification: verified
+  connection: economic-benefit
+  confidence: medium
+  limitations: The letter is verified; its figures are the committee's characterization from records it obtained, not audited accounts. "As much as" makes $157 million an upper bound. The $87 million is part of the $157 million and is not added to it. Fees are revenue to the firm, not Kushner's personal income.
+  responses: This register has not retrieved a response from Affinity to the specific fee figures.
+  sources:
+    - id: S-009
+      locator: Key findings section
+      quote: "Affinity has pocketed as much as $157 million in fees from foreign clients, including $87 million from the Saudi government."
+    - id: S-011
+      locator: Boston Globe summary of the letter
+  related: [C-020, C-022]
+
+- id: C-022
+  track: oversight
+  title: Wyden opened an inquiry into Gulf payments to Affinity and a possible FARA loophole
+  statement: In June 2024 Senate Finance Chairman Wyden opened an inquiry into foreign payments to Affinity Partners, arguing that foreign-funded private funds could be used to avoid Foreign Agents Registration Act disclosure.
+  topics: [oversight, family-finance]
+  regions: [United States, Gulf]
+  entities: [senate-finance, affinity-partners, jared-kushner]
+  event_date: 2024-06-12
+  classification: corroborated
+  connection: plausible-unproven
+  confidence: high
+  limitations: An inquiry is not a finding of wrongdoing. No charge or adverse legal finding against Kushner is documented here.
+  sources:
+    - id: S-008
+      locator: Committee press release
+    - id: S-085
+      locator: O'Dwyer's report on the letter
+  related: [C-021, C-023]
+
+- id: C-023
+  track: oversight
+  title: Wyden and Raskin asked DOJ for a special counsel on Kushner
+  statement: On October 24, 2024, Sen. Ron Wyden and Rep. Jamie Raskin asked the Justice Department to appoint a special counsel to investigate whether Jared Kushner acted as an unregistered foreign agent.
+  topics: [oversight]
+  regions: [United States, Saudi Arabia]
+  entities: [senate-finance, house-oversight-dems, jared-kushner]
+  event_date: 2024-10-24
+  classification: corroborated
+  connection: plausible-unproven
+  confidence: high
+  limitations: A request by opposition-party lawmakers. This register found no record of a special counsel being appointed.
+  sources:
+    - id: S-010
+      locator: Committee press release
+    - id: S-086
+      locator: House Oversight Democrats release (same letter)
+    - id: S-087
+      locator: National Review report
+
+- id: C-024
+  track: financial
+  title: Qatar's QIA and Abu Dhabi's Lunate added $1.5 billion to Affinity in 2024
+  statement: Affinity Partners took in an additional $1.5 billion from the Qatar Investment Authority and Abu Dhabi's Lunate, disclosed in December 2024. Kushner said the talks began in February 2024 and closed before the US election. Assets under management reached about $4.8 billion at the end of 2024, according to SEC filings cited by AGBI.
+  topics: [family-finance, gulf-business]
+  regions: [Qatar, UAE]
+  entities: [qia, lunate, affinity-partners, jared-kushner]
+  event_date: 2024-12-20
+  classification: corroborated
+  connection: financial-relationship
+  confidence: high
+  limitations: Commitments to a fund are not income to its founder. The SEC Form ADV was not retrieved directly.
+  responses: Kushner framed the raise as avoiding future conflicts, saying the firm would not need to raise capital for four years.
+  sources:
+    - id: S-066
+      locator: Bloomberg, Dec 20, 2024
+    - id: S-067
+      locator: AGBI, Mar 2025
+  related: [C-020, C-031]
+
+- id: C-025
+  track: financial
+  title: Affinity became the largest shareholder of Israeli insurer Phoenix Financial
+  statement: Affinity Partners bought 4.95% of Phoenix Financial in July 2024 (about NIS 466–470 million), with an option on another 4.95% at the same valuation. In January 2025, on the last day before the option expired, Israel's Capital Markets, Insurance and Savings Authority approved the exercise, taking Affinity to 9.9% and making it the largest shareholder, with voting rights capped at 5%.
+  topics: [family-finance, israel-business]
+  regions: [Israel]
+  entities: [affinity-partners, phoenix-financial, israel, jared-kushner]
+  event_date: 2025-01
+  classification: corroborated
+  connection: financial-relationship
+  confidence: high
+  limitations: The regulatory approval itself was not retrieved. Calcalist reported the option exercise produced an "instant profit" of about $72 million on paper, which is unrealized appreciation, not cash.
+  sources:
+    - id: S-014
+      locator: Globes, Jan 2025
+    - id: S-015
+      locator: Calcalist, Jan 2025
+  related: [C-026, C-027]
+
+- id: C-026
+  track: financial
+  title: Affinity sold a quarter of its Phoenix stake for about NIS 1.05 billion
+  statement: In July 2026 Affinity Partners sold about 2.5% of Phoenix Financial for roughly NIS 1.05 billion (about $343 million), cutting its stake from 9.9% to 7.4%. Its remaining stake was valued at about NIS 3.3 billion. Reports put the total gain on the original NIS 940 million investment at about NIS 3.4 billion.
+  topics: [family-finance, israel-business]
+  regions: [Israel]
+  entities: [affinity-partners, phoenix-financial, jared-kushner]
+  event_date: 2026-07
+  classification: corroborated
+  connection: economic-benefit
+  confidence: medium
+  limitations: The NIS 3.4 billion "gain" combines realized proceeds with unrealized appreciation on the remaining shares, and accrues to the fund's investors as well as its manager. Kushner's personal share is not disclosed.
+  sources:
+    - id: S-012
+      locator: Globes
+    - id: S-013
+      locator: Ynetnews
+  related: [C-025]
+
+- id: C-027
+  track: oversight
+  title: CNN found Phoenix holds stakes in Israeli military suppliers; no direct link to diplomacy found
+  statement: A CNN investigation (October 2026) reported that Phoenix Financial holds investments in at least nine suppliers to the Israeli military, the largest being about $265 million in Elbit Systems. Affinity owns none of the nine directly. CNN reported no direct link between Kushner's diplomacy and these investments.
+  topics: [family-finance, israel-business, gaza]
+  regions: [Israel]
+  entities: [phoenix-financial, elbit-systems, affinity-partners, jared-kushner]
+  event_date: 2026-10
+  classification: reported
+  connection: plausible-unproven
+  confidence: medium
+  limitations: CNN's original article was not retrieved; its findings are known from other outlets' summaries. The exposure is indirect. Phoenix's portfolio decisions are made by Phoenix, not Affinity.
+  responses: Kushner's attorney said he "never participated in or directed Phoenix's decisions" about the nine companies. Kushner called the story "deeply misleading," saying Phoenix is one of Israel's largest publicly traded financial institutions, not a defense company.
+  sources:
+    - id: S-016
+      locator: Ynetnews summary of CNN
+    - id: S-080
+      locator: Arab News summary of CNN
+    - id: S-017
+      locator: TheWrap, Kushner response
+  related: [C-025, C-028, C-062]
+
+- id: C-028
+  track: oversight
+  title: House Oversight's top Democrat sought answers on Kushner's Phoenix stake
+  statement: On October 6, 2026, Rep. Robert Garcia, ranking member of the House Oversight Committee, wrote to Affinity Partners seeking information following CNN's reporting on its Phoenix Financial stake.
+  topics: [oversight, israel-business]
+  regions: [United States, Israel]
+  entities: [house-oversight-dems, affinity-partners, jared-kushner]
+  event_date: 2026-10-06
+  classification: corroborated
+  connection: plausible-unproven
+  confidence: high
+  limitations: A minority-party letter; no finding.
+  responses: Kushner's lawyer noted that Garcia himself has pension interests in Phoenix and Elbit. Garcia's office said those pensions are managed by state systems.
+  sources:
+    - id: S-018
+      locator: CNN via KION, Oct 6, 2026
+    - id: S-073
+      locator: Garcia office repost of NYT
+  related: [C-027]
+
+- id: C-029
+  track: diplomacy
+  title: Kushner negotiated the Gaza ceasefire as an unpaid envoy while Gulf states fund his firm
+  statement: Kushner was sent to Sharm el-Sheikh in October 2025 to help seal the Gaza ceasefire. Several regional governments he negotiated with are investors in Affinity Partners. CNN reported that, as an unpaid envoy rather than a formal official, he was not required to file a public financial disclosure.
+  topics: [gaza, family-finance, gulf-business]
+  regions: [Gaza, Egypt, Gulf]
+  entities: [jared-kushner, p-gaza-plan, affinity-partners, saudi-pif, qia]
+  event_date: 2025-10
+  classification: corroborated
+  connection: plausible-unproven
+  confidence: medium
+  limitations: The overlap of roles is documented. No evidence reviewed shows a specific negotiating position taken to benefit Affinity.
+  responses: The White House said Kushner's business has nothing to do with his diplomacy, which he conducts as a volunteer; press secretary Karoline Leavitt called the criticism "frankly despicable." Kushner has argued that business ties can bring Israelis and Arabs together.
+  sources:
+    - id: S-057
+      locator: NPR, Oct 23, 2025
+    - id: S-058
+      locator: AFP via Al-Monitor, Dec 2025
+    - id: S-080
+      locator: Arab News summary of CNN (disclosure point)
+  related: [C-020, C-024, C-060]
+
+- id: C-030
+  track: financial
+  title: PIF, Silver Lake and Affinity agreed to buy EA for $55 billion
+  statement: On September 29, 2025, Electronic Arts agreed to be acquired by a consortium of Saudi Arabia's PIF, Silver Lake and Affinity Partners at an enterprise value of about $55 billion ($210 per share in cash). PIF would roll over its existing 9.9% stake.
+  topics: [family-finance, gulf-business]
+  regions: [United States, Saudi Arabia]
+  entities: [electronic-arts, saudi-pif, silver-lake, affinity-partners]
+  event_date: 2025-09-29
+  classification: corroborated
+  connection: financial-relationship
+  confidence: high
+  limitations: $55 billion is the deal's enterprise value, not Affinity's investment. Affinity's equity share was not found. This register has not confirmed whether the deal has closed.
+  sources:
+    - id: S-019
+      locator: Game Informer, Sept 29, 2025
+    - id: S-020
+      locator: Advanced Television, Sept 29, 2025
+
+- id: C-031
+  track: oversight
+  title: Raskin says Affinity has $6.16 billion under management, 99% foreign-funded
+  statement: In April 2026 Rep. Jamie Raskin (House Judiciary ranking member) opened an inquiry into Kushner's dual roles. His letter states that Affinity has about $6.16 billion in assets under management, 99% from foreign nationals including the Saudi, UAE and Qatari sovereign funds. In August 2026 he expanded the probe to a planned $120 million resort in Albania.
+  topics: [oversight, family-finance, gulf-business]
+  regions: [United States, Gulf, Albania]
+  entities: [house-judiciary-dems, affinity-partners, jared-kushner]
+  event_date: 2026-04
+  classification: reported
+  connection: plausible-unproven
+  confidence: medium
+  limitations: The $6.16 billion and 99% figures are the letter's characterization; the underlying filings were not retrieved. Kushner did not respond to the committee, per Raskin.
+  sources:
+    - id: S-071
+      locator: House Judiciary Democrats press release, Aug 2026
+    - id: S-072
+      locator: Asia Times, Apr 2026
+  related: [C-024]
+
+- id: C-032
+  track: oversight
+  title: Democrats say Kushner sought $5 billion in new foreign capital while serving as envoy
+  statement: In March 2026 Sen. Wyden and Rep. Garcia wrote to the White House and Affinity Partners, citing reporting that Kushner was seeking to raise at least $5 billion in additional foreign capital while serving as an envoy.
+  topics: [oversight, family-finance]
+  regions: [United States, Gulf]
+  entities: [senate-finance, house-oversight-dems, affinity-partners, jared-kushner]
+  event_date: 2026-03
+  classification: disputed
+  connection: plausible-unproven
+  confidence: low
+  limitations: The fundraising figure rests on media reporting cited by the lawmakers, and Affinity disputes it.
+  responses: Affinity's chief legal officer said the firm has had only early-stage talks about additional fundraising and does not plan to accept new capital while Kushner volunteers for the government.
+  sources:
+    - id: S-073
+      locator: NYT report reposted by Rep. Garcia
+  related: [C-029]
+
+- id: C-033
+  track: financial
+  title: Kushner called Gaza's waterfront "very valuable" in a 2024 interview
+  statement: In a February 15, 2024 interview at Harvard's Middle East Initiative, made public in March 2024, Kushner said "Gaza's waterfront property, it could be very valuable" and said that, from Israel's perspective, he would do his best to move people out and then clean the area up.
+  topics: [gaza]
+  regions: [Gaza]
+  entities: [jared-kushner]
+  event_date: 2024-02-15
+  classification: corroborated
+  connection: no-connection
+  confidence: high
+  limitations: A statement of opinion by a private citizen at the time. No document reviewed shows any Affinity or Kushner investment in Gaza property.
+  responses: Kushner said on X that he stood by his comments and posted the full interview.
+  sources:
+    - id: S-053
+      locator: AP, Mar 19, 2024
+    - id: S-054
+      locator: SCMP
+  related: [C-011]
+
+- id: C-034
+  track: financial
+  title: CREW put Jared and Ivanka's White House-era outside income at $172M–$640M
+  statement: CREW's February 2021 analysis of their financial disclosures found that Jared Kushner and Ivanka Trump reported between $172 million and $640 million in outside income while working in the White House.
+  topics: [family-finance]
+  regions: [United States]
+  entities: [jared-kushner, ivanka-trump]
+  event_date: 2021-02-08
+  classification: verified
+  connection: economic-benefit
+  confidence: medium
+  limitations: The range is wide because disclosures report income in broad bands. Lead Stories notes that $640 million is the upper bound, not a confirmed total. The figure is not specific to Israel or the Gulf.
+  sources:
+    - id: S-059
+      locator: Opening section
+      quote: "Jared Kushner and Ivanka Trump reported between $172 million and $640 million in outside income while working in the White House, according to an analysis of financial disclosures by CREW."
+    - id: S-060
+      locator: Fact check on the upper bound
+
+- id: C-035
+  track: financial
+  title: An Israeli insurer invested about $30M in Kushner family properties in 2017
+  statement: The New York Times reported (January 2018) that Israeli insurer Menora Mivtachim invested about $30 million in Kushner Companies' Maryland apartment complexes in 2017, and that Kushner Companies had taken at least four loans from Bank Hapoalim.
+  topics: [family-finance, israel-business]
+  regions: [Israel, United States]
+  entities: [menora-mivtachim, bank-hapoalim, kushner-companies, jared-kushner]
+  event_date: 2017-05
+  classification: reported
+  connection: financial-relationship
+  confidence: medium
+  limitations: Known through JTA's summary of the NYT; the original was not retrieved. The Times reported that the deal did not involve Jared Kushner personally and did not violate federal ethics law.
+  responses: Menora's real-estate head said the deal was unaffected by Kushner's government role.
+  sources:
+    - id: S-026
+      locator: JTA summary of NYT
+
+- id: C-036
+  track: financial
+  title: The Brookfield lease that rescued 666 Fifth Avenue — the Qatar link is disputed
+  statement: In 2018 Brookfield took a 99-year lease on Kushner Companies' 666 Fifth Avenue and prepaid the rent for the full term, about $1.1–1.3 billion by various accounts, which let the Kushners clear the building's mortgage. The Qatar Investment Authority was a major investor in Brookfield Property Partners. Sen. Wyden and Rep. Joaquin Castro investigated whether the deal influenced US policy toward Qatar.
+  topics: [family-finance, gulf-business, oversight]
+  regions: [United States, Qatar]
+  entities: [brookfield, kushner-companies, qia, senate-finance, jared-kushner]
+  event_date: 2018-08
+  classification: disputed
+  connection: plausible-unproven
+  confidence: medium
+  limitations: The reported lease value varies by source. A link between QIA money and the lease is contested.
+  responses: Brookfield said the QIA was not involved and that it had no obligation to inform the QIA. Per Wyden's office, Brookfield twice declined to provide requested information.
+  sources:
+    - id: S-023
+      locator: Senate Finance press release, Oct 13, 2022
+    - id: S-024
+      locator: Axios
+    - id: S-025
+      locator: Bisnow
+
+- id: C-037
+  track: financial
+  title: The Kushner family foundation gave to a settlement yeshiva's US fundraising arm
+  statement: Tax filings analysed by Haaretz show the Charles and Seryl Kushner Foundation gave at least $38,000 to American Friends of Beit El Yeshiva between 2011 and 2013. The group's president at the time was David Friedman, later US ambassador to Israel.
+  topics: [israel-policy, family-finance]
+  regions: [West Bank]
+  entities: [kushner-foundation, charles-kushner, afbey]
+  event_date: 2013
+  classification: reported
+  connection: no-connection
+  confidence: high
+  limitations: Both outlets restate Haaretz's analysis of the tax filings; the filings were not retrieved. Charitable giving by the family foundation, legal and tax-exempt under US law. It is money flowing out of the family, not a benefit to it, and it predates the presidency.
+  responses: A Kushner Companies spokesperson declined to comment.
+  sources:
+    - id: S-027
+      locator: AP via PBS
+    - id: S-028
+      locator: The Forward
+
+# ═══ Trump & the Trump Organization ════════════════════════════════════════
+
+- id: C-040
+  track: oversight
+  title: House Democrats documented at least $7.8M from foreign governments to Trump businesses
+  statement: A January 2024 report by House Oversight Committee Democratic staff, based on Mazars accounting records, identified at least $7.8 million paid by at least 20 foreign governments to four Trump-owned businesses during his first term, including $615,422 from Saudi Arabia and $465,744 from Qatar.
+  topics: [trump-finance, gulf-business, oversight]
+  regions: [United States, Saudi Arabia, Qatar]
+  entities: [house-oversight-dems, trump-organization, saudi-arabia, qatar, donald-trump]
+  event_date: 2024-01-04
+  classification: corroborated
+  connection: economic-benefit
+  confidence: medium
+  limitations: A minority staff report covering only 4 of more than 500 Trump businesses, so the total is a floor. It is revenue (e.g. hotel bills), not profit. The report PDF was not retrieved; figures are from AP and the Boston Globe.
+  responses: This register did not find a Trump Organization response to the specific figures.
+  sources:
+    - id: S-021
+      locator: AP, Jan 4, 2024
+    - id: S-022
+      locator: Boston Globe, Jan 4, 2024
+
+- id: C-041
+  track: financial
+  title: Saudi developer Dar Global licenses the Trump brand across the Gulf
+  statement: Dar Global, the international arm of Saudi developer Dar Al Arkan, has licensed the Trump brand for projects in Oman (signed 2022), Jeddah (Trump Tower, December 2024), Riyadh (two projects, December 2024), Dubai (announced 2024) and a $1 billion Trump Plaza in Jeddah (September 2025). Under these deals Dar Global owns and develops the projects and the Trump Organization licenses the name.
+  topics: [trump-finance, gulf-business]
+  regions: [Saudi Arabia, Oman, UAE]
+  entities: [dar-global, trump-organization, eric-trump, donald-trump]
+  event_date: 2024-12
+  classification: corroborated
+  connection: financial-relationship
+  confidence: high
+  limitations: Project values are developer figures, not Trump income. Licence fee terms are not public.
+  sources:
+    - id: S-029
+      locator: AGBI, Dec 2024
+    - id: S-030
+      locator: AP via PBS, Sept 29, 2025
+  related: [C-042, C-043]
+
+- id: C-042
+  track: financial
+  title: Trump reported about $21.9M in licence fees from Dar Al Arkan in one year
+  statement: Press accounts of Trump's financial disclosures report about $21.9 million in licence fees from Dar Al Arkan in 2024, and $5.35 million in licence fees for the Oman project in 2022. Forbes reported $7.85 million from the Oman project between 2021 and early 2024.
+  topics: [trump-finance, gulf-business]
+  regions: [Saudi Arabia, Oman]
+  entities: [dar-global, trump-organization, donald-trump]
+  event_date: 2024
+  classification: reported
+  connection: economic-benefit
+  confidence: medium
+  limitations: The OGE Form 278e filings were not retrieved, so figures come from secondary reporting that differs by year and project. Licence fees are revenue; profit is not disclosed.
+  sources:
+    - id: S-036
+      locator: MPA, June 2025
+    - id: S-034
+      locator: Forbes Australia
+    - id: S-035
+      locator: The National, July 1, 2026
+  related: [C-041]
+
+- id: C-043
+  track: financial
+  title: Qatar's state developer signed for a Trump-branded golf resort near Doha
+  statement: On April 30, 2025, Qatari Diar, the real-estate arm of Qatar's sovereign wealth fund, signed an agreement with Dar Global to develop the Trump International Golf Club and Trump-branded villas at its Simaisma project north of Doha. Eric Trump attended the signing. The National reported a $5.25 million licence fee to Trump connected to the project.
+  topics: [trump-finance, gulf-business]
+  regions: [Qatar]
+  entities: [qatari-diar, dar-global, trump-organization, eric-trump, qatar]
+  event_date: 2025-04-30
+  classification: corroborated
+  connection: financial-relationship
+  confidence: medium
+  limitations: The agreement is corroborated; the $5.25 million fee comes from a single outlet. A reported ~$3 billion project cost is a single-source figure and is not used. The Trump Organization's own release could not be retrieved (HTTP 403).
+  sources:
+    - id: S-032
+      locator: Dar Global press release
+    - id: S-033
+      locator: The Peninsula, Apr 30, 2025
+    - id: S-031
+      locator: Trump Organization release (blocked)
+    - id: S-035
+      locator: The National (licence fee)
+  related: [C-041, C-044]
+
+- id: C-044
+  track: policy
+  title: The Pentagon accepted a Boeing 747-8 from Qatar
+  statement: The Department of Defense accepted a Boeing 747-8 from Qatar in May 2025 for conversion to presidential use. An MOU signed in July 2025 describes it as a "bona fide gift" to the Department, at no cost to the US. ABC News reported that the terms allow Trump to use the plane after leaving office. The aircraft is commonly valued at about $400 million; the refit cost was not disclosed.
+  topics: [trump-finance, gulf-business]
+  regions: [Qatar, United States]
+  entities: [qatar, us-dod, p-qatar-jet, donald-trump]
+  event_date: 2025-05
+  classification: corroborated
+  connection: plausible-unproven
+  confidence: medium
+  limitations: The gift was made to the US government, not to Trump personally. Post-presidency use is reported second-hand. The $400 million value is an estimate.
+  responses: The Pentagon said acceptance followed all federal rules and regulations.
+  sources:
+    - id: S-037
+      locator: Anadolu
+    - id: S-038
+      locator: Jewish Insider, June 2025
+    - id: S-039
+      locator: WION, July 2025 (MOU)
+
+- id: C-045
+  track: financial
+  title: Trump disclosed $57.35M from World Liberty token sales for 2024
+  statement: Trump's financial disclosure covering 2024, filed in June 2025, reported about $57.35 million in income from World Liberty Financial token sales.
+  topics: [trump-finance, crypto]
+  regions: [United States]
+  entities: [donald-trump, world-liberty-financial]
+  event_date: 2025-06-13
+  classification: corroborated
+  connection: economic-benefit
+  confidence: high
+  limitations: The OGE filing was not retrieved directly. The income is not tied to Israel policy.
+  sources:
+    - id: S-044
+      locator: The Block
+    - id: S-045
+      locator: AP via ADN
+
+- id: C-046
+  track: financial
+  title: Trump's 2025 disclosure reported roughly $1.4 billion in crypto income
+  statement: Trump's disclosure covering 2025, filed in 2026, reported roughly $1.4 billion in cryptocurrency-linked income according to PolitiFact, including about $791 million tied to World Liberty Financial and about $635 million from a Celebration Coins (meme-coin) licensing arrangement. InvestmentNews calculated about $592 million in WLF-linked proceeds.
+  topics: [trump-finance, crypto]
+  regions: [United States]
+  entities: [donald-trump, world-liberty-financial]
+  event_date: 2026-07
+  classification: reported
+  connection: economic-benefit
+  confidence: medium
+  limitations: Outlets disagree on totals ($592–800 million for WLF) depending on what they count. The 927-page filing was not retrieved.
+  responses: Deputy press secretary Anna Kelly said neither the president nor his family would engage in conflicts of interest.
+  sources:
+    - id: S-046
+      locator: PolitiFact, July 7, 2026
+    - id: S-047
+      locator: InvestmentNews
+    - id: S-048
+      locator: Center for American Progress memo
+  related: [C-045, C-048]
+
+- id: C-047
+  track: financial
+  title: Abu Dhabi's MGX settled a $2 billion Binance investment in WLF's USD1 stablecoin
+  statement: MGX, the Abu Dhabi firm chaired by Sheikh Tahnoon bin Zayed, agreed in March 2025 to invest $2 billion in Binance. In May 2025, WLF co-founder Zach Witkoff announced that the deal would be settled in WLF's USD1 stablecoin.
+  topics: [crypto, gulf-business]
+  regions: [UAE]
+  entities: [mgx, binance, world-liberty-financial, zach-witkoff, tahnoon]
+  event_date: 2025-05-01
+  classification: corroborated
+  connection: plausible-unproven
+  confidence: medium
+  limitations: The $2 billion went to Binance, not WLF. How much WLF earns from the stablecoin's reserves is not documented, so the benefit to WLF is inferred, not measured.
+  sources:
+    - id: S-040
+      locator: Bloomberg, May 1, 2025
+    - id: S-041
+      locator: Semafor, May 2, 2025
+  related: [C-048]
+
+- id: C-048
+  track: financial
+  title: WSJ — a Tahnoon-backed firm bought 49% of World Liberty days before the inauguration
+  statement: The Wall Street Journal reported that Aryam Investment 1, an Abu Dhabi entity backed by Sheikh Tahnoon bin Zayed, agreed to buy 49% of World Liberty Financial for $500 million in an agreement signed in January 2025, four days before the inauguration. Half was reportedly paid upfront, with about $187 million going to Trump family-controlled entities and at least $31 million to entities affiliated with the Witkoff family.
+  topics: [crypto, gulf-business, trump-finance]
+  regions: [UAE]
+  entities: [aryam, tahnoon, world-liberty-financial, eric-trump, donald-trump, steve-witkoff]
+  event_date: 2025-01-16
+  classification: reported
+  connection: financial-relationship
+  confidence: medium
+  limitations: Single originating outlet (WSJ), known here through The Block and Ledger Insights. The WSJ article was not retrieved. Details of the payment split vary slightly between summaries.
+  sources:
+    - id: S-042
+      locator: The Block summary of WSJ
+    - id: S-043
+      locator: Ledger Insights summary of WSJ
+  related: [C-046, C-047]
+
+- id: C-049
+  track: financial
+  title: Envoy Witkoff kept a World Liberty interest despite a divestment pledge
+  statement: Bloomberg reported that Steve Witkoff, the US Special Envoy to the Middle East, still held a financial interest in World Liberty Financial according to his August 2025 disclosure, despite saying in March 2025 that he was divesting and transferring the holdings to his sons.
+  topics: [crypto, oversight]
+  regions: [United States, Gulf]
+  entities: [steve-witkoff, world-liberty-financial]
+  event_date: 2025-08
+  classification: corroborated
+  connection: financial-relationship
+  confidence: medium
+  limitations: Witkoff is not a Trump family member. The disclosure did not show whether ethics officials approved his divestiture plan.
+  sources:
+    - id: S-074
+      locator: Bloomberg Law
+    - id: S-075
+      locator: House Foreign Affairs Democrats letter
+  related: [C-048]
+
+- id: C-050
+  track: financial
+  title: Miriam Adelson gave about $100 million to a pro-Trump super PAC in 2024
+  statement: According to FEC filings as reported, Miriam Adelson contributed about $100 million to Preserve America PAC, a pro-Trump super PAC, in 2024, with $95 million reported in the third quarter alone.
+  topics: [political-money, israel-policy]
+  regions: [United States]
+  entities: [miriam-adelson, preserve-america-pac, donald-trump]
+  event_date: 2024-09-30
+  classification: corroborated
+  connection: financial-relationship
+  confidence: high
+  limitations: A political contribution to an independent-expenditure committee is not income to Trump. The FEC filing itself was not retrieved. No document reviewed links the contributions to a specific policy decision.
+  sources:
+    - id: S-049
+      locator: Casino.org, citing FEC Q3 filing
+    - id: S-050
+      locator: The New Arab
+  related: [C-003, C-061]
+
+- id: C-051
+  track: financial
+  title: Saudi-backed LIV Golf has played at a Trump course every season since 2022
+  statement: LIV Golf, backed by Saudi Arabia's PIF, has held at least one event at a Trump-owned course each season since 2022. LIV payments are not separately itemized in Trump's disclosure; Trump has called the amount "peanuts," saying "They pay a rental fee."
+  topics: [trump-finance, gulf-business]
+  regions: [United States, Saudi Arabia]
+  entities: [liv-golf, saudi-pif, trump-organization, donald-trump]
+  event_date: 2022
+  classification: reported
+  connection: economic-benefit
+  confidence: medium
+  limitations: The amount paid is unknown. Club revenue figures (e.g. Doral's $121.8 million in 2025) cover all business, not LIV.
+  sources:
+    - id: S-069
+      locator: Front Office Sports
+    - id: S-068
+      locator: Front Office Sports (disclosure revenue)
+
+- id: C-052
+  track: financial
+  title: Forbes estimates of Trump's net worth rose sharply after 2024
+  statement: Forbes estimates of Trump's net worth, as reported, rose from about $3.9–4.3 billion in 2024 to $7.3 billion in September 2025, with crypto ventures adding an estimated $2 billion. A July 2026 AP report cited a Forbes estimate of $6 billion.
+  topics: [trump-finance, crypto]
+  regions: [United States]
+  entities: [donald-trump]
+  event_date: 2025-09
+  classification: reported
+  connection: no-connection
+  confidence: low
+  limitations: These are third-party estimates, not disclosures, and the reported baselines conflict. Changes in net worth reflect market prices (e.g. token valuations), not realized income, and are not attributable to Israel policy.
+  sources:
+    - id: S-078
+      locator: Nasdaq/GOBankingRates summarising Forbes
+
+- id: C-053
+  track: financial
+  title: A Trump-licensed tower in Ramat Gan, Israel, was never built
+  statement: In 2006 the Trump group and Crescent Heights bought a lot at Elite Junction in Ramat Gan, Israel, for about $44 million, intending a "Trump Plaza" tower. The Trump Organization later sued Crescent Heights over the project, and the tower was never built under the Trump name.
+  topics: [trump-finance, israel-business]
+  regions: [Israel]
+  entities: [trump-organization, crescent-heights, donald-trump]
+  event_date: 2006
+  classification: reported
+  connection: no-connection
+  confidence: medium
+  limitations: Predates Trump's political career. The lawsuit's outcome was not found. It is listed because it is the only Trump-branded Israeli property project found in this research.
+  sources:
+    - id: S-070
+      locator: Globes
+
+# ═══ Analytical inferences (clearly labelled) ═════════════════════════════
+
+- id: C-060
+  track: analysis
+  title: "Inference: Gulf states are both deal counterparties and diplomatic counterparts"
+  statement: The record shows the same Gulf sovereign actors (Saudi Arabia's PIF, Qatar's QIA and Qatari Diar, and Abu Dhabi entities linked to Sheikh Tahnoon) as counterparties in Trump-family business (Affinity capital, Trump licensing, the World Liberty stake) and as parties to US Middle East diplomacy in which Trump, Kushner and Witkoff are principals. This creates documented conflict-of-interest exposure. The evidence reviewed does not show that any specific US decision on Israel was made because of these financial relationships.
+  topics: [gulf-business, family-finance, trump-finance, israel-policy]
+  regions: [Gulf, Israel]
+  entities: [saudi-pif, qia, qatari-diar, aryam, mgx, affinity-partners, trump-organization, world-liberty-financial, donald-trump, jared-kushner]
+  event_date: 2025
+  classification: inference
+  connection: plausible-unproven
+  confidence: medium
+  limitations: An interpretation of documented facts. Causation is not established, and much US Gulf policy had other stated rationales.
+  sources:
+    - id: S-009
+      locator: Fee findings (see C-021)
+    - id: S-042
+      locator: WLF stake (see C-048)
+    - id: S-032
+      locator: Qatar licensing (see C-043)
+  related: [C-020, C-024, C-043, C-047, C-048, C-029]
+
+- id: C-061
+  track: analysis
+  title: "Inference: no financial link to Trump found for the Jerusalem, Golan or settlement decisions"
+  statement: This research found no document linking the Jerusalem recognition, the Golan recognition or the 2019 settlements position to a payment, investment or licence benefiting Trump or his family. The largest documented money associated with pro-Israel advocacy around Trump is political contributions (for example Miriam Adelson's ~$100 million in 2024), which are not personal income.
+  topics: [israel-policy, political-money]
+  regions: [Israel, United States]
+  entities: [p-jerusalem, p-golan, p-settlements, donald-trump, miriam-adelson]
+  event_date: 2019
+  classification: inference
+  connection: no-connection
+  confidence: medium
+  limitations: Absence of evidence within this register's search scope is not proof of absence. Political contributions can create influence without personal enrichment; this register makes no finding on influence.
+  sources:
+    - id: S-001
+      locator: Policy decision (C-001)
+    - id: S-003
+      locator: Policy decision (C-004)
+    - id: S-049
+      locator: Contribution (C-050)
+  related: [C-001, C-004, C-006, C-050, C-005]
+
+- id: C-062
+  track: analysis
+  title: "Inference: Kushner's fund gained indirect exposure to Israeli defense-sector performance"
+  statement: Through its Phoenix Financial stake, Affinity Partners holds indirect exposure to Phoenix's portfolio, which includes Israeli defense suppliers. Phoenix's value rose substantially while Kushner was involved in Gaza diplomacy (C-026, C-029). Whether any diplomatic action affected that value is not established.
+  topics: [israel-business, family-finance, gaza]
+  regions: [Israel]
+  entities: [affinity-partners, phoenix-financial, elbit-systems, jared-kushner]
+  event_date: 2026
+  classification: inference
+  connection: plausible-unproven
+  confidence: low
+  limitations: Phoenix's share price is driven by many factors, including Israeli market performance generally. The amount of exposure attributable to defense holdings is not calculated here.
+  sources:
+    - id: S-016
+      locator: CNN findings (see C-027)
+    - id: S-012
+      locator: Stake value (see C-026)
+  related: [C-025, C-026, C-027, C-029]

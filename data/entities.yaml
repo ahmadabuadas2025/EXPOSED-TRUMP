@@ -1,0 +1,443 @@
+# Entities: people, organisations, governments, and policy decisions.
+# type: person | company | fund | government | agency | legislature | nonprofit | pac | policy
+# lane: column on the "lanes" map, left to right —
+#   1 foreign states & sovereign funds · 2 companies & vehicles · 3 Trump family & associates
+#   4 US government & policy · 5 Israel & outcomes
+# Summaries describe role only; findings live in claims.yaml with citations.
+
+# ── Trump family & associates ─────────────────────────────────────────────
+- id: donald-trump
+  name: Donald J. Trump
+  type: person
+  lane: 3
+  country: US
+  role: 45th and 47th President of the United States; owner of the Trump Organization (held via trust during presidencies).
+  summary: Central subject. Business interests include branded real estate licensing, golf and hotel properties, and (from 2024) cryptocurrency ventures.
+
+- id: jared-kushner
+  name: Jared Kushner
+  type: person
+  lane: 3
+  country: US
+  role: Son-in-law; Senior Adviser to the President 2017–2021; founder of Affinity Partners (2021); unpaid envoy in Gaza diplomacy (2025–).
+  summary: Led the first administration's Middle East portfolio, including the 2019 economic plan and the Abraham Accords period. After leaving office he founded Affinity Partners, a private-equity firm funded mainly by Gulf sovereign investors.
+
+- id: ivanka-trump
+  name: Ivanka Trump
+  type: person
+  lane: 3
+  country: US
+  role: Daughter; Adviser to the President 2017–2021.
+  summary: Filed public financial disclosures while serving; outside income reported jointly analysed with Jared Kushner's.
+
+- id: eric-trump
+  name: Eric Trump
+  type: person
+  lane: 3
+  country: US
+  role: Son; Executive Vice President, Trump Organization; World Liberty Financial co-founder.
+  summary: Runs Trump Organization business including Gulf licensing deals; reported signatory of the 2025 World Liberty stake sale.
+
+- id: donald-trump-jr
+  name: Donald Trump Jr.
+  type: person
+  lane: 3
+  country: US
+  role: Son; Executive Vice President, Trump Organization; World Liberty Financial co-founder.
+  summary: Co-runs the Trump Organization; listed among World Liberty Financial's co-founders.
+
+- id: charles-kushner
+  name: Charles Kushner
+  type: person
+  lane: 3
+  country: US
+  role: Jared Kushner's father; founder of Kushner Companies; co-founder of the Charles and Seryl Kushner Foundation.
+  summary: Family business and foundation are documented separately from Jared Kushner's own holdings.
+
+- id: steve-witkoff
+  name: Steve Witkoff
+  type: person
+  lane: 3
+  country: US
+  role: Real-estate investor; US Special Envoy to the Middle East (2025–); World Liberty Financial co-founder with his sons.
+  summary: Not a family member. Included because he is a business partner of the Trump family in World Liberty Financial while serving as a Middle East envoy.
+
+- id: zach-witkoff
+  name: Zach Witkoff
+  type: person
+  lane: 3
+  country: US
+  role: Son of Steve Witkoff; World Liberty Financial co-founder.
+  summary: Announced in May 2025 that USD1 would settle MGX's investment in Binance.
+
+# ── Companies & vehicles ─────────────────────────────────────────────────
+- id: trump-organization
+  name: The Trump Organization
+  type: company
+  lane: 2
+  country: US
+  role: Trump family holding company for real estate, licensing, golf and hospitality.
+  summary: Licenses the Trump name to foreign developers who own and build the projects; the licensor earns fees rather than owning the buildings.
+
+- id: world-liberty-financial
+  name: World Liberty Financial (WLF)
+  type: company
+  lane: 2
+  country: US
+  role: Cryptocurrency venture launched 2024; issuer of the WLFI token and USD1 stablecoin.
+  summary: Co-founded by Trump family members and the Witkoffs. Trump-family entities (reported as DT Marks DEFI LLC) hold an equity and token interest.
+
+- id: affinity-partners
+  name: Affinity Partners
+  type: fund
+  lane: 2
+  country: US
+  role: Private-equity firm founded by Jared Kushner in 2021 (Miami).
+  summary: Limited partners are reported to be predominantly Gulf sovereign wealth funds (Saudi PIF, Qatar's QIA, Abu Dhabi's Lunate). Investments include an Israeli insurer (Phoenix Financial) and a stake in the EA take-private consortium.
+
+- id: kushner-companies
+  name: Kushner Companies
+  type: company
+  lane: 2
+  country: US
+  role: Kushner family real-estate company.
+  summary: Jared Kushner was its CEO before 2017. Owned 666 Fifth Avenue from 2007 until the 2018 Brookfield transaction.
+
+- id: kushner-foundation
+  name: Charles and Seryl Kushner Foundation
+  type: nonprofit
+  lane: 2
+  country: US
+  role: Kushner family charitable foundation.
+  summary: Tax filings show grants to US nonprofits supporting institutions in West Bank settlements.
+
+- id: afbey
+  name: American Friends of Beit El Yeshiva
+  type: nonprofit
+  lane: 5
+  country: US
+  role: US fundraising arm of a yeshiva in the Beit El settlement (West Bank).
+  summary: David Friedman, later US ambassador to Israel, was its president when the Kushner foundation's grants were reported.
+
+- id: dar-global
+  name: Dar Global (Dar Al Arkan)
+  type: company
+  lane: 2
+  country: SA
+  role: London-listed international arm of Saudi developer Dar Al Arkan.
+  summary: Trump Organization's main Gulf licensing partner since 2022 (Oman, Jeddah, Riyadh, Dubai, Qatar).
+
+- id: phoenix-financial
+  name: Phoenix Financial
+  type: company
+  lane: 5
+  country: IL
+  role: Israeli insurance and investment group (publicly traded, Tel Aviv).
+  summary: Affinity Partners became its largest shareholder in 2025. Its investment portfolio includes holdings in Israeli defense suppliers.
+
+- id: elbit-systems
+  name: Elbit Systems
+  type: company
+  lane: 5
+  country: IL
+  role: Israel's largest weapons manufacturer.
+  summary: Appears here only as a Phoenix Financial portfolio holding identified by CNN; no direct Trump-family holding is documented.
+
+- id: menora-mivtachim
+  name: Menora Mivtachim
+  type: company
+  lane: 5
+  country: IL
+  role: Israeli insurer (publicly traded, Tel Aviv).
+  summary: Invested in Kushner Companies apartment properties in 2017.
+
+- id: bank-hapoalim
+  name: Bank Hapoalim
+  type: company
+  lane: 5
+  country: IL
+  role: Israeli bank.
+  summary: Reported lender to Kushner Companies.
+
+- id: brookfield
+  name: Brookfield (Brookfield Property Partners)
+  type: company
+  lane: 2
+  country: CA
+  role: Canadian asset manager.
+  summary: Took a 99-year prepaid lease of 666 Fifth Avenue in 2018. The Qatar Investment Authority was a significant investor in Brookfield Property Partners.
+
+- id: electronic-arts
+  name: Electronic Arts (EA)
+  type: company
+  lane: 2
+  country: US
+  role: US video-game publisher.
+  summary: Agreed in September 2025 to a $55 billion take-private by PIF, Silver Lake and Affinity Partners.
+
+- id: silver-lake
+  name: Silver Lake
+  type: fund
+  lane: 2
+  country: US
+  role: US private-equity firm.
+  summary: Co-investor in the EA take-private.
+
+- id: binance
+  name: Binance
+  type: company
+  lane: 2
+  country: Intl
+  role: Cryptocurrency exchange.
+  summary: Received MGX's $2 billion minority investment, settled in WLF's USD1 stablecoin.
+
+- id: liv-golf
+  name: LIV Golf
+  type: company
+  lane: 2
+  country: SA
+  role: Professional golf league backed by Saudi Arabia's Public Investment Fund.
+  summary: Has staged tournaments at Trump-owned golf courses since 2022.
+
+- id: crescent-heights
+  name: Crescent Heights
+  type: company
+  lane: 2
+  country: US
+  role: US real-estate developer.
+  summary: Trump's partner in a 2006 Ramat Gan (Israel) land purchase; later sued by the Trump Organization.
+
+- id: preserve-america-pac
+  name: Preserve America PAC
+  type: pac
+  lane: 4
+  country: US
+  role: Pro-Trump super PAC.
+  summary: Principal recipient of Miriam Adelson's 2024 political contributions.
+
+# ── Foreign states & sovereign funds ─────────────────────────────────────
+- id: saudi-pif
+  name: Public Investment Fund (Saudi Arabia)
+  type: fund
+  lane: 1
+  country: SA
+  role: Saudi sovereign wealth fund chaired by Crown Prince Mohammed bin Salman.
+  summary: Largest investor in Affinity Partners; LIV Golf's backer; lead investor in the EA take-private.
+
+- id: saudi-arabia
+  name: Kingdom of Saudi Arabia
+  type: government
+  lane: 1
+  country: SA
+  role: Foreign government.
+  summary: Payments by the Saudi government to Trump properties during 2017–2021 are documented in Mazars records cited by House Oversight Democrats.
+
+- id: qatar
+  name: State of Qatar
+  type: government
+  lane: 1
+  country: QA
+  role: Foreign government.
+  summary: Donor of a Boeing 747-8 to the US Department of Defense (2025); owner of Qatari Diar and the QIA.
+
+- id: qia
+  name: Qatar Investment Authority (QIA)
+  type: fund
+  lane: 1
+  country: QA
+  role: Qatari sovereign wealth fund.
+  summary: Affinity Partners limited partner (2024); investor in Brookfield Property Partners.
+
+- id: qatari-diar
+  name: Qatari Diar
+  type: company
+  lane: 1
+  country: QA
+  role: Real-estate company of Qatar's sovereign wealth fund.
+  summary: Master developer of Simaisma, where a Trump-branded golf club and villas are planned with Dar Global.
+
+- id: uae
+  name: United Arab Emirates
+  type: government
+  lane: 1
+  country: AE
+  role: Foreign government.
+  summary: Party to the Abraham Accords; home of MGX, Lunate and Aryam Investment.
+
+- id: lunate
+  name: Lunate
+  type: fund
+  lane: 1
+  country: AE
+  role: Abu Dhabi investment manager.
+  summary: Affinity Partners limited partner (2024).
+
+- id: mgx
+  name: MGX
+  type: fund
+  lane: 1
+  country: AE
+  role: Abu Dhabi AI-focused investment firm chaired by Sheikh Tahnoon bin Zayed.
+  summary: Invested $2 billion in Binance, settled in USD1.
+
+- id: aryam
+  name: Aryam Investment 1
+  type: fund
+  lane: 1
+  country: AE
+  role: Abu Dhabi entity reported to be backed by Sheikh Tahnoon bin Zayed.
+  summary: Reported buyer of a 49% stake in World Liberty Financial (WSJ).
+
+- id: tahnoon
+  name: Sheikh Tahnoon bin Zayed Al Nahyan
+  type: person
+  lane: 1
+  country: AE
+  role: UAE National Security Adviser; chairs MGX and G42.
+  summary: Linked through MGX and Aryam to two transactions involving World Liberty Financial.
+
+- id: miriam-adelson
+  name: Miriam Adelson
+  type: person
+  lane: 1
+  country: US/IL
+  role: Israeli-American billionaire and Republican donor.
+  summary: Largest individual donor to pro-Trump super PAC spending in 2024.
+
+- id: sheldon-adelson
+  name: Sheldon Adelson (d. 2021)
+  type: person
+  lane: 1
+  country: US
+  role: Casino magnate and Republican donor.
+  summary: Reported in 2018 to have offered to fund part of the Jerusalem embassy.
+
+- id: israel
+  name: State of Israel (Government)
+  type: government
+  lane: 5
+  country: IL
+  role: Foreign government.
+  summary: Counterparty to US recognition decisions, arms sales and peace initiatives; its regulator approved Affinity's Phoenix stake increase.
+
+# ── US government & oversight ────────────────────────────────────────────
+- id: us-state-dept
+  name: US Department of State
+  type: agency
+  lane: 4
+  country: US
+  role: Executive department.
+  summary: Issued the 2019 settlements legal position and 2025 emergency arms-sale determinations.
+
+- id: us-dod
+  name: US Department of Defense
+  type: agency
+  lane: 4
+  country: US
+  role: Executive department.
+  summary: Formal recipient of Qatar's Boeing 747-8.
+
+- id: senate-finance
+  name: Senate Finance Committee (Wyden)
+  type: legislature
+  lane: 4
+  country: US
+  role: Congressional committee; Sen. Ron Wyden chair (2021–2025), then ranking member.
+  summary: Ran an investigation into Affinity Partners' foreign funding and 666 Fifth Avenue.
+
+- id: house-oversight-dems
+  name: House Oversight Committee Democrats
+  type: legislature
+  lane: 4
+  country: US
+  role: Minority staff of the House Committee on Oversight.
+  summary: Authored the January 2024 report on foreign-government payments to Trump businesses; 2026 letters on Kushner.
+
+- id: house-judiciary-dems
+  name: House Judiciary Committee Democrats (Raskin)
+  type: legislature
+  lane: 4
+  country: US
+  role: Minority of the House Judiciary Committee.
+  summary: Opened a 2026 inquiry into Affinity Partners and Kushner's envoy role.
+
+# ── Policy decisions ─────────────────────────────────────────────────────
+- id: p-jerusalem
+  name: Jerusalem recognition & embassy relocation (2017–18)
+  type: policy
+  lane: 4
+  country: US
+  role: Proclamation 9683 (Dec 6, 2017); interim embassy opened May 2018.
+  summary: Formal US recognition of Jerusalem as Israel's capital.
+
+- id: p-golan
+  name: Golan Heights recognition (2019)
+  type: policy
+  lane: 4
+  country: US
+  role: Proclamation 9852 (Mar 25, 2019).
+  summary: US recognition of the Golan Heights as part of Israel.
+
+- id: p-settlements
+  name: Settlements legal position (2019)
+  type: policy
+  lane: 4
+  country: US
+  role: Secretary Pompeo's statement of Nov 18, 2019.
+  summary: The US stopped treating West Bank settlements as per se inconsistent with international law.
+
+- id: p-peace-prosperity
+  name: '"Peace to Prosperity" economic plan (2019–20)'
+  type: policy
+  lane: 4
+  country: US
+  role: $50 billion proposed investment framework presented by Kushner, June 2019.
+  summary: Proposal only; funders were not identified and it was conditional on a political settlement.
+
+- id: p-abraham
+  name: Abraham Accords (2020)
+  type: policy
+  lane: 4
+  country: US
+  role: Normalization agreements signed at the White House, Sept 15, 2020.
+  summary: Israel–UAE and Israel–Bahrain normalization, with the US as witness.
+
+- id: p-arms-2025
+  name: Emergency arms sales to Israel (Feb 2025)
+  type: policy
+  lane: 4
+  country: US
+  role: Emergency determination bypassing congressional review.
+  summary: Munitions and bulldozer sales totalling roughly $3 billion.
+
+- id: p-mou-2016
+  name: 2016 US–Israel Memorandum of Understanding
+  type: policy
+  lane: 4
+  country: US
+  role: $38 billion military assistance framework, FY2019–2028 (signed under President Obama).
+  summary: Context only. The baseline aid framework predates the Trump administration.
+
+- id: p-gaza-takeover
+  name: Gaza "takeover" proposal (Feb 2025)
+  type: policy
+  lane: 4
+  country: US
+  role: Proposal announced at Feb 4, 2025 press conference.
+  summary: Trump proposed US long-term ownership and redevelopment of Gaza.
+
+- id: p-gaza-plan
+  name: 20-point Gaza plan & Board of Peace (2025–26)
+  type: policy
+  lane: 4
+  country: US
+  role: White House plan of Sept 29, 2025; Board of Peace chaired by Trump.
+  summary: Ceasefire and post-war governance framework; the Board oversees reconstruction funding.
+
+- id: p-qatar-jet
+  name: Acceptance of Qatari 747-8 (2025)
+  type: policy
+  lane: 4
+  country: US
+  role: Department of Defense acceptance, May 2025; MOU July 2025.
+  summary: Aircraft accepted as a gift to the US government for conversion to presidential use.
