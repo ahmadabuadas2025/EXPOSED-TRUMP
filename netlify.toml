@@ -1,0 +1,8 @@
+[build]
+  base = "."
+  command = "pip install -r requirements.txt && python pipeline/build.py && cd web && npm ci && npm run build"
+  publish = "web/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  PYTHON_VERSION = "3.12"
